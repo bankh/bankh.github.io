@@ -72,7 +72,7 @@ a {
       <div class="main-icon text-success"><span class="uxicon uxicon-clock-refresh"></span></div>
       <h1>Future home of something quite cool.</h1>
       <p class="lead"> Please come back <strong>later</strong>. 
-      <p class="lead">Click to see the <strong> <a href="pdfs/Portfolio_full.pdf"> portfolio</a></strong> or <strong> <a href="pdfs/HSBCV.pdf">resume </a></strong> .</p>
+      <p class="lead">Click to see <strong> <a href="pdfs/Portfolio_full.pdf">the portfolio</a></strong> or <strong> <a href="pdfs/HSBCV.pdf">resume </a></strong> .</p>
     </div>
   </div>
 
