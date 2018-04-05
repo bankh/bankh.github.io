@@ -12,4 +12,4 @@ Smart-Manufacturing systems are increasingly being used to perform complex tasks
 
 [Download paper here](http://bankh.github.io/files/SME_NAMRC_46_Paper_140.pdf)
 
-Recommended citation: Your Name, You. (2010). "Paper Title Number 1." <i>Journal 1</i>. 1(2).
+Recommended citation: Bank, H.S., D'Souza, S., Rasam, A., (2018). "Temporal Logic (TL)-Based Autonomy for Smart Manufacturing Systems." <i>46th SME North American Manufacturing Research Conference, Texas, USA</i>.
