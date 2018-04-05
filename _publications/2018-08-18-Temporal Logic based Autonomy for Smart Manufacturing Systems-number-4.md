@@ -1,5 +1,5 @@
 ---
-title: "Temporal Logic (TL)-Based Autonomy for Smart Manufacturing Systems"
+title: "2018-08-18-Temporal Logic based Autonomy for Smart Manufacturing Systems-number-4"
 collection: publications
 permalink: /publication/2018-08-18-Temporal Logic based Autonomy for Smart Manufacturing Systems-number-4
 excerpt: 'Smart-Manufacturing systems are increasingly being used to perform complex tasks on the factory ﬂoor.'
