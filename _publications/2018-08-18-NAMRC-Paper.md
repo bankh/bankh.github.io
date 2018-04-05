@@ -1,7 +1,7 @@
 ---
 title: "Temporal Logic (TL)-Based Autonomy for Smart Manufacturing Systems"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/2018-08-18-NAMRC-Paper
 excerpt: 'Smart-Manufacturing systems are increasingly being used to perform complex tasks on the factory ﬂoor.'
 date: 2018-08-18
 venue: '46th SME North American Manufacturing Research Conference'
