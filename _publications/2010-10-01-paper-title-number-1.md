@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 1"
+title: "Temporal Logic (TL)-Based Autonomy for Smart Manufacturing Systems"
 collection: publications
 permalink: /publication/2010-10-01-paper-title-number-1
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
