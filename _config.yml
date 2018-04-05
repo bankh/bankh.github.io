@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : " Hasan Sinan Bank / Personal Webpage"
+title                    : ""
 title_separator          : "-"
 name                     : &name "Hasan Sinan Bank"
 description              : &description "Innovate | Realize | Lead"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &H_s_Bank
 facebook:
   username               :
   app_id                 :
