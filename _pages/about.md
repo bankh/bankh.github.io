@@ -22,9 +22,11 @@ to learn about the current opportunities and you 1. are an expert in runtime sys
 about a project, please send [me](hasan.bank@siemens.com) an email. Please add your resume with the details of current
 research with your advisor's name.
 
-Site-wide configuration
+Publications
 ------ 
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
 
 Create content & metadata
 ------
