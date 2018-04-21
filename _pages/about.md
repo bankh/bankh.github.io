@@ -19,10 +19,7 @@ Many of the features of dynamic content management systems (like Wordpress) can 
 Opportunities in Automation Runtime Technologies at SCCT
 ======
 ART consist of software developers and researchers in diverse backgrounds. You can email me
-to learn about the current opportunities and you
-1. are an expert in runtime system technologies and their applications
-1. have a graduate degree in STEM or fundamental sciences, or  
-1. are a full stack programming ninja. 
+to learn about the current opportunities and you 1. are an expert in runtime system technologies and their applications, 1. have a graduate degree in STEM or fundamental sciences, or  1. are a full stack programming ninja. 
 
 Site-wide configuration
 ------
