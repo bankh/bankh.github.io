@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hasan Sinan Bank / Web Page"
+title                    : #"Hasan Sinan Bank / Web Page"
 title_separator          : "-"
 name                     : &name "Hasan Sinan Bank"
 description              : &description "Research Scientist at SCCT"
