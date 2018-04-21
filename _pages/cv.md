@@ -34,10 +34,23 @@ immersive VR experience for Siemens PLM Software) in 2014; and pack3D (3D nestin
   
 Skills
 ======
-* Robotics
-* Programming
-  * C/ C++
-  * Python
+* English (Fluent), German (Mittelstuffe), Mandarin (Beginner), Turkish (Native)
+* Software: Robot Operating System [ROS], C++ (Advanced), Python (Advanced), Octave/ MATLAB, Java
+, C, Linux, C/C++ Embedded Programming, SolidWorks, Siemens NX, Labview, Proteus LTSpice, Eagle, Corel
+Draw, Theano, GraphLab
+* Controllers: Odroid, Raspberry Pi, S7-1500 series PLCs, Sinamics S120, Spartan 3E FPGAs, Microchip PIC
+controllers, Arduino Hardware Platform, NI DAQ, NI CRIO, NI PXI Equipments, Labjack
+* Machine Tools: 3 axis machining tools (AeroTech, Delta Tau Controller), 3 Axis Mazak FJV 200, 5 Axis
+Mori Seiki NMV5000, Universal Robots URx, Kuka IIWA 700
+
+Honors Awards
+======
+Koc Fellowship for Graduate Studies (2008-2011)
+Carnegie Fellowship for Graduate Studies (2011-2016, Left PhD Program in 2012)
+2015 Siemens USA Innovative Idea Award $250,000 Grant for Research - Siemens Agile Manufacturing 
+System (aka [Siemens Spiderbot](https://www.popsci.com/siemens-created-spider-bots-that-3d-print))
+2015 TUBITAK (Turkish NSF) Research Funding - Low Cost desktop laser 3d printer
+2017 Siemens Hackathon Top Three Winner (2nd place)
 
 Publications
 ======
