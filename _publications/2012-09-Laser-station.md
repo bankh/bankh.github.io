@@ -1,7 +1,7 @@
 ---
 title: "Development of New Hybrid Laser Workstation for Additive Manufacturing and Laser Machining"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2012-09-Laser-station
 excerpt: 'This paper details about a laser machining and additive manufacturing by using lasers with two different wavelengths.'
 date: 2012-09-01
 venue: 'International Conference on Machine Design and Production'
