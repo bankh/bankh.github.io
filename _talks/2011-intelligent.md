@@ -1,9 +1,9 @@
 ---
-title: "Intelligent toolpath generation blah blah"
+title: "Intelligent toolpath generation strategies for free-form machining operations"
 collection: talks
 type: "Conference proceedings talk"
-permalink: /talks/2014-03-01-talk-3
-venue: "Ulusal Talasli Imalat Kongresi"
+permalink: /talks/2011-intelligent
+venue: "International Machining Conference"
 date: 2011-03-01
 location: "Istanbul, Turkiye"
 ---
