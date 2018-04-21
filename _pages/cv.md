@@ -9,10 +9,10 @@ redirect_from:
 
 Education
 ======
-* B.Sc. in Textile Engineering, Istanbul Technical University, 2008
-* B.Sc. in Mechanical Engineering with System Dynamics and Control Track, Istanbul Technical University, 2010
-* M.Sc. in Mechanical Engineering, Koc University, 2011
 * M.Sc. in Mechanical Engineering, Rutgers University, 2015
+* M.Sc. in Mechanical Engineering, Koc University, 2011
+* B.Sc. in Mechanical Engineering with System Dynamics and Control Track, Istanbul Technical University, 2010
+* B.Sc. in Textile Engineering, Istanbul Technical University, 2008
 
 Work experience
 ======
@@ -34,7 +34,7 @@ immersive VR experience for Siemens PLM Software) in 2014; and pack3D (3D nestin
   
 Skills
 ======
-* English (Fluent), German (Mittelstuffe), Mandarin (Beginner), Turkish (Native)
+* English (Fluent), German (Mittelstuffe), [Mandarin](https://www.udemy.com/certificate/UC-ZTENAQDD/) (Beginner), Turkish (Native)
 * Software: Robot Operating System [ROS], C++ (Advanced), Python (Advanced), Octave/ MATLAB, Java
 , C, Linux, C/C++ Embedded Programming, SolidWorks, Siemens NX, Labview, Proteus LTSpice, Eagle, Corel
 Draw, Theano, GraphLab
