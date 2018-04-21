@@ -1,9 +1,9 @@
 ---
 title: "Agile manufacturing platform and system"
 collection: publications
-permalink: /publication/2017-Patent-asme
+permalink: /publication/2017-Patent-agile
 excerpt: 'This paper is about an implementation of temporal logic planner for smart manufacturing system.'
-date: 2018-05-10
+date: 2017-01-01
 venue: 'Patent'
 paperurl: 'https://patents.google.com/patent/WO2017189502A1/en?oq=WO2017189502A1'
 citation: 'Bank, HS., Dalloro, L. &quot;Agile manufacturing platform and system.&quot; <i>WO2017189502A1</i>.'
