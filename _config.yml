@@ -83,7 +83,7 @@ author:
   bio              : "Research Scientist at SCCT"
   location         : "Princeton, New Jersey"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            :
   uri              :
   bitbucket        :
@@ -98,13 +98,15 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : 
   pinterest        :
   soundcloud       :
+  stackoverflow    : 
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "https://twitter.com/H_s_Bank"
+  twitter          : "H_s_Bank"
   vine             :
   weibo            :
   xing             :
