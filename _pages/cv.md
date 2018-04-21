@@ -7,8 +7,6 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
 Education
 ======
 * B.S. in Mechanical Engineering, Istanbul Technical University, 2010
