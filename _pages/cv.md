@@ -9,7 +9,8 @@ redirect_from:
 
 Education
 ======
-* B.S. in Mechanical Engineering, Istanbul Technical University, 2010
+* B.Sc. in Textile Engineering, Istanbul Technical University, 2008
+* B.Sc. in Mechanical Engineering with System Dynamics and Control Track, Istanbul Technical University, 2010
 * M.Sc. in Mechanical Engineering, Koc University, 2011
 * M.Sc. in Mechanical Engineering, Rutgers University, 2015
 
