@@ -11,12 +11,16 @@ redirect_from:
 I am a research scientist at Siemens Corporation Corporate Technology. Before SCCT, I was a research
 assistant in Rutgers University, University of Connecticut, and Carnegie Mellon University.  
 
-In SCCT, I've worked in different technology fields to .... {ADD MORE}
+In SCCT, I've worked in different technology fields and research groups where I've been part ofprojects
+such as Support Generation of Additive Manufacturing Package of Siemens NX; Resilient Control of Distributed
+Ship Control Systems; Siemens Agile Manufacturing System; and recently Autonomous Gantry Robot System and 
+Autonomous Agricultural Pod System.
 
 Opportunities in Automation Runtime Technologies at SCCT
 ------
 <b>Full-time:</b> ART consist of software developers and researchers in diverse backgrounds. You can email me
-to learn about the current opportunities and you: 1. are an expert in runtime system technologies and their applications, 2. have a graduate degree in STEM or fundamental sciences, or 3. are a full stack programming ninja. <br />
+to learn about the current opportunities and you: 1. are an expert in runtime system technologies and their 
+applications, 2. have a graduate degree in STEM or fundamental sciences, or 3. are a full stack programming ninja.<br />
 
 <b>Internship:</b> If you are a graduate student interested in an internship at SCCT and/or getting more information
 about a project, please send [me](hasan.bank@siemens.com) an email. Please add your resume with the details of current
