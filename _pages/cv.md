@@ -16,7 +16,7 @@ Education
 
 Work experience
 ======
-* Feb 2014 - Present: Research Scientist at Siemens Corporation Corporate Technology, Automation Runtime Technologies
+<b> Feb 2014 - Present: Research Scientist at Siemens Corporation Corporate Technology, Automation Runtime Technologies <b />
 * Develop interdisciplinary line of research in engineering and science which would be translated into products and/or prototypes for clients
 * Recognize the gaps in the Siemens' technology products and create innovative ideas for having direct impact related with Business Units
 * Collaborate with other groups and research group members
@@ -25,7 +25,7 @@ Work experience
 * Generate high-quality invention disclosures and patent applications
 * Publish research results in top journals and conferences
 
-* Sept 2013 - Feb 2014: Research Intern at Siemens Corporation Corporate Technology Product Simulation and Modeling
+<b> Sept 2013 - Feb 2014: Research Intern at Siemens Corporation Corporate Technology Product Simulation and Modeling <b />
 * Worked on the programming for the additive manufacturing add-on -Siemens NX package- in order to generate mechanical support structures
 * Proposed ideas and actively aided for the preparations of client’s proposals
 * Received a grant for an internal seed-funding competition “Siemens Agile Manufacturing System” -mobile digital manufacturing platform which utilized a digital manufacturing stack in Robot Operating System [ROS]; designed and fabricated the validation platforms - SpiderBots. The stack includes path planning for digital manufacturing; perception, navigation, and odometry packages for the robot.
