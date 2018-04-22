@@ -1,7 +1,7 @@
 ---
 title: "Intelligent toolpath selection via multi-criteria optimization in complex sculptured surface milling"
 collection: publications
-permalink: /publication/2017-JIM-Intelligent
+permalink: /publication/2011-JIM-Intelligent
 excerpt: 'Intelligent manufacturing system details are given with a novel toolpath optimization algorithm.'
 date: 2011-06-01
 venue: 'Journal of Intelligent Manufacturing'
