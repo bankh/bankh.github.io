@@ -28,7 +28,7 @@ to learn about the current opportunities and you: 1. are an expert in runtime sy
 applications, 2. have a graduate degree in STEM or fundamental sciences, or 3. are a full stack programming ninja.<br />
 
 <b>Internship:</b> If you are a graduate student interested in an internship at SCCT and/or getting more information
-about a project, please send [me](hasan.bank@siemens.com) an email. Please add your resume with the details of current
+about a project, please send [me]<hasan.bank@siemens.com> an email. Please add your resume with the details of current
 research with your advisor's name.
 
 Publications
