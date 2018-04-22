@@ -14,7 +14,7 @@ was conducting research on flexible electonics, soft robotics, signal processing
 for advanced manufacturing, and micro manufacturing, respectively.  
 
 In SCCT, I've worked in different technology fields and research groups where I've been part of projects
-such as Support Generation of Additive Manufacturing Package of Siemens NX; Resilient Control of Distributed
+such as Support Generation of Additive Manufacturing Package for Siemens NX; Resilient Control of Distributed
 Ship Control Systems; [Siemens Agile Manufacturing System](https://goo.gl/dPYpWo); and recently Autonomous Gantry 
 Robot System as well as [Autonomous Agricultural Pod System](https://goo.gl/VBnZ3c).
 
