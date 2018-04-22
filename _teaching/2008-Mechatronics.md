@@ -1,10 +1,10 @@
 ---
-title: "Mechatronics and Control 2008-2011"
+title: "Mechatronics and Control"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2008-Mechatronics
 venue: "Koc University"
-date: 2014-01-01
+date: 2008-2011
 location: "Istanbul, Turkey"
 ---
 
