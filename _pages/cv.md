@@ -47,8 +47,7 @@ Honors Awards
 ======
 Koc Fellowship for Graduate Studies (2008-2011) <br />
 Carnegie Fellowship for Graduate Studies (2011-2016, Left PhD Program in 2012) <br />
-2015 Siemens USA Innovative Idea Award $250,000 Grant for Research - Siemens Agile Manufacturing <br />
-System (aka [Siemens Spiderbot](https://www.popsci.com/siemens-created-spider-bots-that-3d-print)) <br />
+2015 Siemens USA Innovative Idea Award $250,000 Grant for Research - Siemens Agile Manufacturing System (aka [Siemens Spiderbot](https://www.popsci.com/siemens-created-spider-bots-that-3d-print)) <br />
 2015 TUBITAK (Turkish NSF) Research Funding - Low Cost desktop laser 3d printer <br />
 2017 Siemens Hackathon Top Three Winner (2nd place) <br />
 
@@ -72,4 +71,6 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* ASME member 
+* ACM member
+* IEEE member
