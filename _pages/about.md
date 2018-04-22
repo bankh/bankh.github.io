@@ -33,12 +33,12 @@ research with your advisor's name.
 
 Publications
 ------ 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 Talks
 ------
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+ <ul>{% for post in site.talks %}
+    {% include archive-single-talk-cv.html %}
+  {% endfor %}</ul>
