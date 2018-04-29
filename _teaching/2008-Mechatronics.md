@@ -8,7 +8,7 @@ date: 2008-2011
 location: "Istanbul, Turkey"
 ---
 
-The main objective of MECH 542 is to expose the engineering graduate
+The main objective of CAD class is to expose the engineering graduate
 students to the multi-disciplinary and synergistic use of mechanical, 
 electrical and computer engineering in order to design improved products 
 and processes. The class is designed to equip the students with theoretical
