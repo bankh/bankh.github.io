@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2008-Dynamics
 venue: "Koc University"
-date: 2008-2010
+date: 2008-08-01
 location: "Istanbul, Turkey"
 ---
 
