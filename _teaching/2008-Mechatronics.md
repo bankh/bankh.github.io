@@ -4,7 +4,7 @@ collection: teaching
 type: "Graduate course"
 permalink: /teaching/2008-Mechatronics
 venue: "Koc University"
-date: 2008-2011
+date: 2008-08-01
 location: "Istanbul, Turkey"
 ---
 
