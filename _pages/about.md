@@ -23,7 +23,7 @@ domain. Please see portfolio for more details of the past and recent projects.
 
 Opportunities in Automation Runtime Technologies at SCCT
 ------
-<b>Full-time:</b> ART consist of software developers and researchers in diverse backgrounds. You can email me
+<b>Full-time:</b> ART consists of software developers and researchers in diverse backgrounds. You can email me
 to learn about the current opportunities and you: 1. are an expert in runtime system technologies and their 
 applications, 2. have a graduate degree in STEM or fundamental sciences, or 3. are a full stack programming ninja.<br />
 
