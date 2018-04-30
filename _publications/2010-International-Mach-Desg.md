@@ -8,7 +8,3 @@ venue: 'International Conference on Machine Design and Production'
 paperurl: ''
 citation: 'Bank, HS., Izbassarov, D., Lazoglu, I.(2010). &quot;Design and Manufacturing of a Compact, Open-Architecture Based Additive Manufacturing Machine.&quot; <i>International Conference on Machine Design and Production Jan 2010</i>.'
 ---
-
-Download paper here
-
-Recommended citation: Bank, HS., Izbassarov, D., Lazoglu, I.(2010). &quot;Design and Manufacturing of a Compact, Open-Architecture Based Additive Manufacturing Machine.&quot; <i>International Conference on Machine Design and Production Jan 2010</i>.
