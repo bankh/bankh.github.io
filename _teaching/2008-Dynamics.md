@@ -14,9 +14,7 @@ focuses on teaching the concepts and methods on planar and three-dimensional
 kinematics and kinetics of particles and rigid bodies. It covers work, energy, 
 impulse and momentum concepts
 
-<p align="center">
-  ![alt text](https://github.com/bankh/bankh.github.io/blob/master/images/2009-dynamics.jpg "Dynamics Class")
-</p>
+        ![alt text](https://github.com/bankh/bankh.github.io/blob/master/images/2009-dynamics.jpg "Dynamics Class")
 
 I was one of the assitants actively contribute the class content as well as the
 teaching to the students during the lab sessions. I had thought this class two
