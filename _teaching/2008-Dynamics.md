@@ -13,9 +13,16 @@ it is targeting all mechanical engineering students at Koc Univeristy. It
 focuses on teaching the concepts and methods on planar and three-dimensional 
 kinematics and kinetics of particles and rigid bodies. It covers work, energy, 
 impulse and momentum concepts
-<p align="justify">
-![alt text](https://github.com/bankh/bankh.github.io/blob/master/images/2009-dynamics.jpg "Dynamics Class")
+
+<p align="center">
+  <b>Some Links:</b><br>
+  <a href="#">Link 1</a> |
+  <a href="#">Link 2</a> |
+  <a href="#">Link 3</a>
+  <br><br>
+  ![alt text](https://github.com/bankh/bankh.github.io/blob/master/images/2009-dynamics.jpg "Dynamics Class")
 </p>
+
 I was one of the assitants actively contribute the class content as well as the
 teaching to the students during the lab sessions. I had thought this class two
 semesters.
