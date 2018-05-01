@@ -15,11 +15,6 @@ kinematics and kinetics of particles and rigid bodies. It covers work, energy,
 impulse and momentum concepts
 
 <p align="center">
-  <b>Some Links:</b><br>
-  <a href="#">Link 1</a> |
-  <a href="#">Link 2</a> |
-  <a href="#">Link 3</a>
-  <br><br>
   ![alt text](https://github.com/bankh/bankh.github.io/blob/master/images/2009-dynamics.jpg "Dynamics Class")
 </p>
 
