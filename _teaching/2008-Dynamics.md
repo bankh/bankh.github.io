@@ -1,9 +1,9 @@
 ---
-title: "Dynamics for Undergraduates"
+title: "Dynamics"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2008-Dynamics
-venue: "Koc University 2008, 2009,"
+venue: "Koc University 2008, 2009"
 date: 2010-08-01
 location: "Istanbul, Turkey"
 ---

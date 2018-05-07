@@ -3,7 +3,7 @@ title: "Mechatronics and Control"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2008-Mechatronics
-venue: "Koc University 2009, 2010, "
+venue: "Koc University 2009, 2010"
 date: 2011-08-01
 location: "Istanbul, Turkey"
 ---
