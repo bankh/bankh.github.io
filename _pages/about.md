@@ -8,15 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-I am a research scientist at Siemens Corporation Corporate Technology. Before SCCT, I was a research
+I am a project lead and research scientist at Siemens Corporation Corporate Technology. Before SCCT, I was a research
 assistant in Rutgers University, University of Connecticut, and Carnegie Mellon University where I 
 was conducting research on flexible electonics, soft robotics, signal processing and prognostics 
 for advanced manufacturing, and micro manufacturing, respectively.  
 
 In SCCT, I have worked in different technology fields and research groups where I've been part of projects
 such as Support Generation of Additive Manufacturing Package for Siemens NX; Resilient Control of Distributed
-Ship Control Systems; [Siemens Agile Manufacturing System](https://goo.gl/dPYpWo); and recently Autonomous Gantry 
-Robot System as well as [Autonomous Agricultural Pods](https://goo.gl/VBnZ3c).
+Ship Control Systems. I innovate and realize [Siemens Agile Manufacturing System](https://goo.gl/dPYpWo); and 
+recently Autonomous Gantry Robot System as well as [Autonomous Agricultural Pods](https://goo.gl/VBnZ3c) which 
+I led a team of people to realize the idea. I am also PI and Co-PI for a few different government projects.
 
 My current research interest and work are based on autonomy, robotics, and its applications for industrial
 domain. Please see portfolio for more details of the past and recent projects.
