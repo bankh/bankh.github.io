@@ -26,7 +26,7 @@ Opportunities
 ------
 <b>Full-time:</b> You can email me to learn about the current opportunities and you: 1. are an expert in runtime system technologies and their applications, 2. have a graduate degree in STEM or fundamental sciences, or 3. are a full stack programming ninja.<br />
 
-<b>Internship:</b> If you are a graduate student interested in an internship at SCCT and/or getting more information
+<b>Internship:</b> If you are a graduate student interested in an internship and/or getting more information
 about a project, please send [me] (sinanbank@gmail.com) an email. Please add your resume with the details of current
 research with your advisor's name.
 
