@@ -17,7 +17,7 @@ In SCCT, I worked in different technology fields and research groups where I've 
 such as Support Generation of Additive Manufacturing Package for Siemens NX; Resilient Control of Distributed
 Ship Control Systems. I innovate and realize [Siemens Agile Manufacturing System](https://goo.gl/dPYpWo); and 
 recently Autonomous Gantry Robot System as well as [Autonomous Agricultural Pods](https://goo.gl/FdmDLS) which 
-I led a team of people to realize the idea. I am also PI and Co-PI for a few different government projects.
+I led a team of people to realize the idea. I was also PI and Co-PI for a few different government projects.
 
 My current research interest and work are based on autonomy, robotics, and its applications for industrial
 domain. Please see portfolio for more details of the past and recent projects.
