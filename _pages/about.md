@@ -10,7 +10,7 @@ redirect_from:
 
 I was a project lead and research scientist at Siemens Corporation Corporate Technology. Before SCCT, I was a research
 assistant in Rutgers University and Carnegie Mellon University where I 
-was conducting research on flexible electonics, soft robotics, signal processing and prognostics 
+was conducting research on flexible electronics, soft robotics, signal processing and prognostics 
 for advanced manufacturing, and micro manufacturing, respectively.  
 
 In SCCT, I worked in different technology fields and research groups where I've been part of projects
