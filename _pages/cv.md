@@ -10,13 +10,14 @@ redirect_from:
 Education
 ======
 * M.Sc. in Mechanical Engineering, Rutgers University, 2015
+* Ph.D. in Mechanical Engineering, Carnegie Mellon University (Left the Program at 2012)
 * M.Sc. in Mechanical Engineering, Koc University, 2011
 * B.Sc. in Mechanical Engineering with System Dynamics and Control Track, Istanbul Technical University, 2010
 * B.Sc. in Textile Engineering, Istanbul Technical University, 2008
 
 Work experience
 ======
-<b> Feb 2014 - Present: Research Scientist at Siemens Corporation Corporate Technology, Automation Runtime Technologies <b />
+<b> Feb 2014 - Present: Project Lead and Research Scientist at Siemens Corporation Corporate Technology, Automation Runtime Technologies <b />
 * Develop interdisciplinary line of research in engineering and science which would be translated into products and/or prototypes for clients
 * Recognize the gaps in the Siemens' technology products and create innovative ideas for having direct impact related with Business Units
 * Collaborate with other groups and research group members
