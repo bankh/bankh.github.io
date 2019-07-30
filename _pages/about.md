@@ -9,21 +9,18 @@ redirect_from:
 ---
 I am an assistant professor at California State University, Chico. Before joining Chico State, I was a project lead and research scientist at Siemens Corporation Corporate Technology. During my graduate years at Rutgers University and Carnegie Mellon University, I was conducting research on flexible electronics, soft robotics, signal processing and prognostics for advanced manufacturing, and micro manufacturing.  
 
-In SCCT, I worked in different technology fields and research groups where I've been part of projects
-such as Support Generation of Additive Manufacturing Package for Siemens NX; Resilient Control of Distributed
-Ship Control Systems. I innovate and realize [Siemens Agile Manufacturing System](https://goo.gl/dPYpWo); and 
-recently Autonomous Gantry Robot System as well as [Autonomous Agricultural Pods](https://goo.gl/FdmDLS) which 
+In SCCT, I worked in the topics of artificial intelligence and robotics topics in different research groups where I've been part of projects such as Support Generation of Additive Manufacturing Package for Siemens NX; Resilient Control of Distributed Ship Control Systems. I innovate and realize [Siemens Agile Manufacturing System](https://goo.gl/dPYpWo); and 
+recently Autonomous Gantry Robot System as well as [Autonomous Agricultural Production System](https://goo.gl/FdmDLS) which 
 I led a team of people to realize the idea. I was also PI and Co-PI for a few different government projects.
 
-My current research interest and work are based on autonomy, robotics, artificial intelligence and its applications for digital manufacturing. Please see portfolio for more details of the past and recent projects.
+My current research interest and work are based on autonomy, robotics, artificial intelligence and its applications for advanced manufacturing. Please see portfolio for more details of the past and recent projects.
 
 Opportunities for Students
 ------
-<b>Full-time:</b> You can email me to learn about the current opportunities and you: 1. are an expert in runtime system technologies and their applications, 2. have an ambition in STEM or fundamental sciences, or 3. are a full stack programming ninja or dedicated to be one, or 4. have 3.0 GPA for undergraduates 3.2 for graduate students of Chico State.<br />
+<b>Full-time:</b> You can email me to learn about the current opportunities and you: 1. want to be an expert in robotics and advanced manufacturing for their applications with artificial intelligence, 2. have an ambition in STEM or fundamental sciences, or 3. are a full stack programming ninja or dedicated to be one, or 4. have valid GPA for undergraduates and graduate students of Chico State.<br />
 
 <b>Internship:</b> If you are a graduate student interested in an internship and/or getting more information
-about a project at Craftnetics or my research lab, please send [me] (hsbank@csuchico.edu) an email. Please add your resume with the details of current
-research interests.
+about a project at Craftnetics or my research lab, please send [me] (hsbank@mail.csuchico.edu) an email. Please add your resume with the details of current interests.
 
 Publications
 ------ 
