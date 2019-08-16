@@ -1,7 +1,4 @@
 
-__Office Hours for Students__ <br>
-Please use [this link](http://calendly.com/hsbank) to book an appointment to reach me. You will receive an approval of your request once I accepted the meeting.
-
 ---
 permalink: /
 title: "About me"
@@ -11,6 +8,11 @@ redirect_from:
   - /about/
   - /about.html
 ---  
+
+<table>
+<tr>__Office Hours for Students__ <br>
+Please use [this link](http://calendly.com/hsbank) to book an appointment to reach me. You will receive an approval of your request once I accepted the meeting.</tr>
+</table>
 
 I am an assistant professor at California State University, Chico. Before joining Chico State, I was a project lead and research scientist at Siemens Corporation Corporate Technology. In SCCT, I worked in the topics of artificial intelligence and robotics topics in different research groups where I've been part of projects such as Support Generation of Additive Manufacturing Package for Siemens NX; Resilient Control of Distributed Ship Control Systems. I innovate and realize [Siemens Agile Manufacturing System](https://goo.gl/dPYpWo); and recently Autonomous Gantry Robot System as well as [Autonomous Agricultural Production System](https://goo.gl/FdmDLS). I was also leading team of scientist to receive government grants which I was PI and Co-PI for a few of those. 
 
