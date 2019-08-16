@@ -22,7 +22,7 @@ Opportunities for Students
 <b>Full-time:</b> You can email me to learn about the current opportunities and you: 1. want to be an expert in robotics and advanced manufacturing for their applications with artificial intelligence, 2. have an ambition in STEM or fundamental sciences, or 3. are a full stack programming ninja or dedicated to be one, or 4. have valid GPA for undergraduate and graduate students of Chico State.<br />
 
 <b>Internship:</b> If you are a graduate student interested in an internship and/or getting more information
-about a project at Craftnetics or my research lab, please send [me] (hsbank@mail.csuchico.edu) an email. Please add your resume with the details of current interests.
+about a project at Craftnetics or my research lab, please send (me) [hsbank@mail.csuchico.edu] an email. Please add your resume with the details of current interests.
 
 Publications
 ------ 
