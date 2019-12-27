@@ -9,7 +9,7 @@ redirect_from:
 ---  
 
 __Office Hours for Students__ <br>
-Please use [this link](http://calendly.com/hsbank) to book an appointment to reach me. You will receive an approval of your request once I accepted the meeting.
+Please use [this link](http://calendly.com/hsbank) to book an appointment for office hours. You will receive an approval of your request once I accepted the meeting.
 
 About me
 ------
