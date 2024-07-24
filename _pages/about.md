@@ -19,7 +19,7 @@ My current research interests and work focus on autonomy, robotics, and artifici
 Opportunities (for Students)
 ------
 <b>Internship:</b> If you are a graduate student interested in an internship and/or getting more information
-about a project at Craftnetics, please send (me) [hsbank@mail.csuchico.edu] an email. Please add your resume with details about your current interests.
+about a project at Craftnetics, please send an email to info@craftnetics.ai. Please add your resume with details about your current interests.
 
 Publications
 ------ 
