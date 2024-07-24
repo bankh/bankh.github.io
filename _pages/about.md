@@ -8,23 +8,18 @@ redirect_from:
   - /about.html
 ---  
 
-__Office Hours for Students__ <br>
-Please use [this link](http://calendly.com/hsbank) to book an appointment for office hours. You will receive an approval of your request once I accepted the meeting.
-
 About me
 ------
-I am an assistant professor at California State University, Chico. Before joining Chico State, I was a project lead and research scientist at Siemens Corporation Corporate Technology. In SCCT, I worked in the topics of artificial intelligence and robotics in different research groups where I've been part of projects such as Support Generation of Additive Manufacturing Package for Siemens NX; Resilient Control of Distributed Ship Control Systems. I innovate and realize [Siemens Agile Manufacturing System](https://goo.gl/dPYpWo); and recently Autonomous Gantry Robot System as well as [Autonomous Agricultural Production System](https://goo.gl/FdmDLS). I was also leading a team of scientist to receive government grants which I was PI and Co-PI for a few of those. 
+I am the Founder and President of Craftnetics, Inc. and a former Assistant Professor at California State University, Chico, in the Department of Mechanical Engineering, Mechatronic Engineering, and Advanced Manufacturing. Before joining Chico State, I was a Project Lead and Research Scientist at Siemens Corporation Corporate Technology. At SCCT, I worked on artificial intelligence and robotics in various research groups, contributing to projects such as the Support Generation of Additive Manufacturing Package for Siemens NX and the Resilient Control of Distributed Ship Control Systems. I have also innovated and realized the [Siemens Agile Manufacturing System](https://goo.gl/dPYpWo) and, more recently, the [Autonomous Gantry Robot System](https://bankh.github.io/files/SME_NAMRC_46_Paper_140.pdf) and the [Autonomous Agricultural Production System](https://goo.gl/FdmDLS). Additionally, I led a team of scientists to secure government grants, serving as PI and Co-PI for several of those projects.
 
-During my graduate years at Rutgers University and Carnegie Mellon University, I was conducting research on flexible electronics, soft robotics, micro-manufacturing, as well as signal processing and prognostics for advanced manufacturing.  
+During my graduate studies at Rutgers University, Koc University, and Colorado State University, I conducted research on  flexible electronics, soft robotics, micro-manufacturing, generative design and engineering of cyber-physical systems, and signal processing and prognostics for advanced manufacturing. 
 
-My current research interests and work are based on autonomy, robotics, artificial intelligence, and its applications for advanced manufacturing. Please see portfolio for more details of the past and recent projects.
+My current research interests and work focus on autonomy, robotics, and artificial intelligence and their applications in several domains (e.g., advanced manufacturing, agriculture, etc.). My portfolio provides more details on my past and recent projects.
 
-Opportunities for Students
+Opportunities (for Students)
 ------
-<b>Full-time:</b> You can email me to learn about the current opportunities and you: 1. want to be an expert in robotics and advanced manufacturing for their applications with artificial intelligence, 2. have an ambition in STEM or fundamental sciences, or 3. are a full-stack programming ninja or dedicated to be one, or 4. have valid GPA for undergraduate and graduate students of Chico State.<br />
-
 <b>Internship:</b> If you are a graduate student interested in an internship and/or getting more information
-about a project at Craftnetics or my research lab, please send (me) [hsbank@mail.csuchico.edu] an email. Please add your resume with the details of current interests.
+about a project at Craftnetics, please send (me) [hsbank@mail.csuchico.edu] an email. Please add your resume with details about your current interests.
 
 Publications
 ------ 
