@@ -10,7 +10,6 @@ redirect_from:
 Education
 ======
 * M.Sc. in Mechanical Engineering, Rutgers University, 2015
-* Ph.D. in Mechanical Engineering, Carnegie Mellon University (Left the Program at 2012)
 * M.Sc. in Mechanical Engineering, Koc University, 2011
 * B.Sc. in Mechanical Engineering with System Dynamics and Control Track, Istanbul Technical University, 2010
 * B.Sc. in Textile Engineering, Istanbul Technical University, 2008
@@ -47,9 +46,8 @@ Mori Seiki NMV5000, Universal Robots URx, Kuka IIWA 700
 Honors Awards
 ======
 Koc Fellowship for Graduate Studies (2008-2011) <br />
-Carnegie Fellowship for Graduate Studies (2011-2016, Left PhD Program in 2012) <br />
-2015 Siemens USA Innovative Idea Award $250,000 Grant for Research - Siemens Agile Manufacturing System (aka [Siemens Spiderbot](https://www.popsci.com/siemens-created-spider-bots-that-3d-print)) <br />
-2015 TUBITAK (Turkish NSF) Research Funding - Low Cost desktop laser 3d printer <br />
+2015 Siemens Seed Grant for Research  ($250,000) - Siemens Agile Manufacturing System (aka [Siemens Spiderbot](https://www.popsci.com/siemens-created-spider-bots-that-3d-print)) <br />
+2015 TUBITAK Funding (~$100,000) - Low Cost Desktop Laser 3D printer <br />
 2017 Siemens Hackathon Top Three Winner (2nd place) <br />
 
 Publications
