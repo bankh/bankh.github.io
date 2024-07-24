@@ -8,5 +8,3 @@ venue: 'International Conference on Machine Design and Production'
 paperurl: ''
 citation: 'Bank, HS., Lazoglu, I.(2012). &quot;Development of a New Hybrid Workstation for Additive Manufacturing and Laser Machining.&quot; <i>International Conference on Machine Design and Production</i>.'
 ---
-
-Recommended citation: Bank, HS., Lazoglu, I.(2012). &quot;Development of a New Hybrid Workstation for Additive Manufacturing and Laser Machining.&quot; <i>International Conference on Machine Design and Production</i>.
