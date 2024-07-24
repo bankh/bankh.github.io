@@ -9,6 +9,4 @@ paperurl: ''
 citation: 'Bank, HS., Lazoglu, I.(2012). &quot;Development of a New Hybrid Workstation for Additive Manufacturing and Laser Machining.&quot; <i>International Conference on Machine Design and Production</i>.'
 ---
 
-[Download paper here](http://bankh.github.io/files/SME_NAMRC_46_Paper_140.pdf)
-
 Recommended citation: Bank, HS., Lazoglu, I.(2012). &quot;Development of a New Hybrid Workstation for Additive Manufacturing and Laser Machining.&quot; <i>International Conference on Machine Design and Production</i>.
