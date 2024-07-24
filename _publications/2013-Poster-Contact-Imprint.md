@@ -10,6 +10,3 @@ citation: 'Bank,HS., Bajorek, M., Mazzeo, DA., (2013). &quot;Contact Imprinting 
 October 2011'
 
 ---
-
-Recommended citation: Manav,C., Bank, HS., Lazoglu, I., (2011). &quot;Intelligent toolpath selection via multi-criteria optimization in complex sculptured surface milling.&quot; <i>Journal of Intelligent Manufacturing</i>.
-October 2011'
