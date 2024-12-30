@@ -1,14 +1,10 @@
-/* ==========================================================================
-   SIDEBAR
-   ========================================================================== */
-
-/*
-   Default
+/* ==========================================================================  
+   SIDEBAR  
    ========================================================================== */
 
 .sidebar {
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 
   @include clearfix();
   margin-bottom: 1em;
@@ -23,7 +19,6 @@
       opacity: 1;
     }
   }
-
 
   @include breakpoint($x-large) {
     padding-right: 0;
@@ -65,8 +60,32 @@
   }
 }
 
-/*
-   Author profile and links
+/* Globe Container Fix */
+.globe-container {
+  position: relative;
+  width: 100%; /* Container takes full width of its parent */
+  max-width: 400px; /* Restrict maximum width */
+  height: 400px; /* Set a fixed height for the globe */
+  margin: 1em auto; /* Center the globe horizontally and add spacing */
+  overflow: hidden; /* Prevent globe overflow */
+
+  iframe,
+  canvas {
+    width: 100%; /* Ensure globe content fits the container */
+    height: 100%; /* Match the container height */
+  }
+}
+
+/* Responsive Globe Container */
+@media (max-width: 768px) {
+  .globe-container {
+    max-width: 300px;
+    height: 300px; /* Adjust size for smaller screens */
+  }
+}
+
+/* ==========================================================================  
+   Author profile and links  
    ========================================================================== */
 
 .author__avatar {
@@ -115,6 +134,7 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
