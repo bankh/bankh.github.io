@@ -83,7 +83,7 @@ author:
   bio              : " "
   location         : "California, USA"
   employer         :
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  googlescholar    : https://scholar.google.com/citations?user=vU6oBhwAAAAJ&hl=en #"http://yourfullgooglescholarurl.com"
   email            :
   uri              :
   bitbucket        :
