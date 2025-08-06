@@ -8,7 +8,7 @@ video_thumbnail: ""
 slides: ""
 slide_show: false
 slide_thumbnail: ""
-poster: ""
+poster: "https://raw.githubusercontent.com/fusion360-api-cheatsheet/fusion360-api-cheatsheet.github.io/main/assets/chrome_test.gif"
 publication: ""
 github: "https://github.com/fusion360-api-cheatsheet/fusion360-api-cheatsheet.github.io"
 project_link: "https://fusion360-api-cheatsheet.github.io/"
