@@ -1,13 +1,17 @@
 ---
 title: "Temporal Logic (TL)-Based Autonomy for Smart Manufacturing Systems"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2018-Procedia-TL-Autonomy
 excerpt: 'This paper is about an implementation of temporal logic planner for smart manufacturing system.'
 date: 2018-05-10
 type: 'Conference'
-venue: '46th NAMRC, Texas, USA'
+venue: '46th NAMRC'
+month: 'August'
+publisher: 'SME'
+location: 'College Station, TX, USA'
 video: ''
 paperurl: 'http://bankh.github.io/files/SME_NAMRC_46_Paper_140.pdf'
+authors: Bank, H.S., Dsouza, S., & Rasam A
 citation: '@article{bank2018temporal,
   title={Temporal logic (TL)-based autonomy for smart manufacturing systems},
   author={Bank, Hasan Sinan and Dsouza, Sandeep and Rasam, Aditya},

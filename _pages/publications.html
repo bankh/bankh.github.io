@@ -5,96 +5,89 @@ permalink: /publications/
 author_profile: true
 ---
 
-<style>
-.publications-list {
-  margin-top: 30px;
-}
-
-.publications-list .archive__item {
-  margin-bottom: 30px;
-  padding: 20px;
-  border: 1px solid #e1e5e9;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.publications-list .archive__item:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-.publications-list .archive__item-title {
-  color: #2c3e50;
-  font-size: 1.3em;
-  margin-bottom: 15px;
-}
-
-.publications-list .archive__item-title a {
-  color: #2c3e50;
-  text-decoration: none;
-}
-
-.publications-list .archive__item-title a:hover {
-  color: #007acc;
-  text-decoration: underline;
-}
-
-.citation-box {
-  background-color: #f8f9fa;
-  border-left: 4px solid #007acc;
-  border-radius: 4px;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.citation-authors {
-  color: #333;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-.citation-title {
-  color: #555;
-  font-size: 0.95em;
-  margin-bottom: 8px;
-}
-
-.citation-venue {
-  color: #666;
-  font-style: italic;
-  font-size: 0.9em;
-}
-</style>
-
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
 {% include base_path %}
 
-<div class="publications-list">
-  <!-- New style rendering if publication categories are defined -->
-  {% if site.publication_category %}
-    {% for category in site.publication_category  %}
-      {% assign title_shown = false %}
-      {% for post in site.publications reversed %}
-        {% if post.category != category[0] %}
-          {% continue %}
-        {% endif %}
-        {% unless title_shown %}
-          <h2>{{ category[1].title }}</h2><hr />
-          {% assign title_shown = true %}
-        {% endunless %}
-        {% include archive-single-publication.html %}
-      {% endfor %}
-    {% endfor %}
+<!-- Sort all publications by date (most recent first) -->
+{% assign all_pubs = site.publications | sort: 'date' | reverse %}
+{% assign sorted_pubs = "" | split: "" %}
+{% for pub in all_pubs %}
+  {% unless pub.type == 'In Preparation' %}
+    {% assign sorted_pubs = sorted_pubs | push: pub %}
+  {% endunless %}
+{% endfor %}
+
+<!-- Separate publications by type -->
+{% assign journal_pubs = "" | split: "" %}
+{% assign conference_pubs = "" | split: "" %}
+{% assign patent_pubs = "" | split: "" %}
+{% assign magazine_pubs = "" | split: "" %}
+
+{% for pub in sorted_pubs %}
+  {% if pub.type contains "Patent" %}
+    {% assign patent_pubs = patent_pubs | push: pub %}
+  {% elsif pub.type contains "Conference" %}
+    {% assign conference_pubs = conference_pubs | push: pub %}
+  {% elsif pub.type contains "Scientific Magazine" or pub.type contains "Magazine" %}
+    {% assign magazine_pubs = magazine_pubs | push: pub %}
   {% else %}
-    {% for post in site.publications reversed %}
-      {% include archive-single-publication.html %}
-    {% endfor %}
+    {% assign journal_pubs = journal_pubs | push: pub %}
   {% endif %}
-</div>
+{% endfor %}
+
+<!-- Journal Articles Section -->
+{% if journal_pubs.size > 0 %}
+<h2>Journal Articles</h2>
+<hr />
+{% assign jour_count = 0 %}
+{% for post in journal_pubs %}
+  {% assign jour_count = jour_count | plus: 1 %}
+  {% assign current_label = '[J' | append: jour_count | append: ']' %}
+  {% include archive-single-publication.html post=post type='list' label=current_label %}
+{% endfor %}
+<br />
+{% endif %}
+
+<!-- Conference Papers Section -->
+{% if conference_pubs.size > 0 %}
+<h2>Conference Papers</h2>
+<hr />
+{% assign conf_count = 0 %}
+{% for post in conference_pubs %}
+  {% assign conf_count = conf_count | plus: 1 %}
+  {% assign current_label = '[C' | append: conf_count | append: ']' %}
+  {% include archive-single-publication.html post=post type='list' label=current_label %}
+{% endfor %}
+<br />
+{% endif %}
+
+<!-- Patents Section -->
+{% if patent_pubs.size > 0 %}
+<h2>Patents</h2>
+<hr />
+{% assign pat_count = 0 %}
+{% for post in patent_pubs %}
+  {% assign pat_count = pat_count | plus: 1 %}
+  {% assign current_label = '[P' | append: pat_count | append: ']' %}
+  {% include archive-single-publication.html post=post type='list' label=current_label %}
+{% endfor %}
+<br />
+{% endif %}
+
+<!-- Scientific Magazine Articles Section -->
+{% if magazine_pubs.size > 0 %}
+<h2>Scientific Magazine Articles</h2>
+<hr />
+{% assign mag_count = 0 %}
+{% for post in magazine_pubs %}
+  {% assign mag_count = mag_count | plus: 1 %}
+  {% assign current_label = '[M' | append: mag_count | append: ']' %}
+  {% include archive-single-publication.html post=post type='list' label=current_label %}
+{% endfor %}
+{% endif %}
 
 
 

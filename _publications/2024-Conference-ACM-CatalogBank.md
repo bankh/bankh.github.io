@@ -1,7 +1,7 @@
 ---
 title: "CatalogBank: A Structured and Interoperable Catalog Dataset with a Semi-Automatic Annotation Tool DocumentLabeler for Engineering System Design"
 collection: publications
-permalink: /publication/2024-ACM-CatalogBank
+permalink: /publication/2024-Conference-ACM-CatalogBank
 excerpt: 'This paper presents CatalogBank, a structured dataset and annotation tool for engineering system design, nominated for Best Paper Award.'
 date: 2024-08-01
 type: 'Conference'

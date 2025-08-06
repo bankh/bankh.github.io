@@ -11,7 +11,7 @@ number: '74'
 pages: '4232'
 github: 'https://github.com/simplefoc'
 video: 'https://www.youtube.com/@theskura/videos'
-authors: 'Skuric, A., Bank, H. S., Unger, R., Williams, O., & González-Reyes, D.'
+authors: 'Skuric, A., Bank, H. S., Unger, R., Williams, O., & González-Reyes, D'
 paperurl: 'https://joss.theoj.org/papers/10.21105/joss.04232'
 citation: '@article{skuric2022simplefoc,
   title={SimpleFOC: a field oriented control (FOC) library for controlling brushless direct current (BLDC) and stepper motors},

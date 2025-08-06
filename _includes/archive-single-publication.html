@@ -134,6 +134,8 @@ video).  Used in both list and card layouts.
             {% elsif post.type == "Journal" %}
               {{ post.authors | default: authors }}. ({{ year }}). {{ paper_title }}.
               <em>{{ venue }}</em>{% if post.volume %}, {{ post.volume }}{% endif %}{% if post.number %}({{ post.number }}){% endif %}{% if post.pages %}, {{ post.pages }}{% endif %}.
+            {% elsif post.type == "Scientific Magazine" %}
+              {{ post.authors | default: authors }}. ({{ year }}). {{ paper_title }}. <em>{{ venue }}</em>{% if post.number %}, ({{ post.number }}){% endif %}{% if post.pages %}, {{ post.pages }}{% endif %}.
             {% else %}
               {{ authors }}. {{ paper_title }}. {{ venue }}. {{ year }}.
             {% endif %}
@@ -148,6 +150,8 @@ video).  Used in both list and card layouts.
                 {{ auth }}. {{ paper_title }}. {{ patent_number }}. {{ year }}.
               {% elsif venue contains "Conference" or venue contains "NAMRC" or venue contains "ASME" or venue contains "SME" or post.venue contains "Conference" or post.venue contains "NAMRC" or post.venue contains "ASME" or post.venue contains "SME" %}
                 {{ authors }}. {{ paper_title }}. Paper presented at: {{ venue }}; {{ year }}; {{ address }}.
+              {% elsif post.type == "Scientific Magazine" %}
+                {{ post.authors | default: authors }}. ({{ year }}). {{ paper_title }}. <em>{{ venue }}</em>{% if post.number %}, ({{ post.number }}){% endif %}{% if post.pages %}, {{ post.pages }}{% endif %}.
               {% else %}
                 {{ authors }}. {{ paper_title }}. {{ venue }}. {{ year }}.
               {% endif %}{{ extras }}

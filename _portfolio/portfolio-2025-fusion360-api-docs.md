@@ -15,7 +15,7 @@ project_link: "https://fusion360-api-cheatsheet.github.io/"
 selected: false
 collection: portfolio
 date: 2025-07-30
-keyword: "Artificial Intelligence and Generative Design, Software Development, Education"
+keyword: "Software Development, Education"
 ---
 
 While working on an AI-based solution for a PLM (Product Lifecycle Management) process, I identified significant friction in navigating Fusion 360's API documentation. The existing workflow required excessive time and cognitive effort to understand relationships between API objects, often necessitating navigation between multiple pages without losing context.

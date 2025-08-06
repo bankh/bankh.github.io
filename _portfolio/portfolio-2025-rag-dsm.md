@@ -1,5 +1,5 @@
 ---
-title: "RAG and GraphRAG based Design Structure Matrix Generation"
+title: "LLM, RAG, and GraphRAG based Design Structure Matrix Generation"
 excerpt: "Architectural synthesis using Large Language Models (in submission to The Journal of Systems Engineering)"
 poster: ""
 advisor: ""
