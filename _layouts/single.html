@@ -4,6 +4,24 @@ layout: default
 
 {% include base_path %}
 
+<style>
+/* Fix for teaching page title positioning */
+.page__title {
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+  padding-top: 10px !important;
+}
+
+.page__inner-wrap {
+  padding-top: 20px !important;
+}
+
+/* Ensure proper spacing for teaching content */
+.page__content {
+  margin-top: 20px !important;
+}
+</style>
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% endif %}
@@ -28,32 +46,39 @@ layout: default
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.read_time %}
-            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+            <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
         {% if page.modified %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
-        {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% if page.collection == 'teaching' or page.collection == 'student_projects' %}
+          <p style="margin-top: 10px; margin-bottom: 15px;"> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-        
-             
-        {% if page.citation and page.paperurl %}
-          <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
-        {% elsif page.citation %}
-          <p>Recommended citation: {{ page.citation }} </p>
-        {% endif %}
-    
+        {% endif %}    
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
+
+        {% if page.citation %}
+          <div style="margin: 20px 0;">
+            <h4>BibTeX Citation:</h4>
+            <pre style="background-color: #2d3748; color: #e2e8f0; padding: 15px; border-radius: 5px; overflow-x: auto; font-size: 0.9em; white-space: pre-wrap; word-wrap: break-word; font-family: 'Courier New', monospace; line-height: 1.6;">{% assign formatted_citation = page.citation | replace: '  ', ' ' | replace: '},', '},' | replace: '{', ' {' | replace: '}', '} ' | replace: '  ', ' ' %}{{ formatted_citation }}</pre>
+            {% if page.paperurl or page.slidesurl or page.bibtexurl %}
+              <div style="margin-top: 15px;">
+                {% if page.paperurl %}<a href="{{ page.paperurl }}" class="btn btn--small" style="margin-right: 10px;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download Paper</a>{% endif %}
+                {% if page.slidesurl %}<a href="{{ page.slidesurl }}" class="btn btn--small" style="margin-right: 10px;"><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> Download Slides</a>{% endif %}
+                {% if page.bibtexurl %}<a href="{{ page.bibtexurl }}" class="btn btn--small" style="margin-right: 10px;"><i class="fa fa-file-text-o" aria-hidden="true"></i> Download BibTeX</a>{% endif %}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

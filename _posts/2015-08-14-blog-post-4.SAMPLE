@@ -1,0 +1,17 @@
+# SAMPLE TEMPLATE: How to Add a New Blog Post
+# ===========================================
+# To add a new blog post:
+# 1. Copy this file and rename it to YYYY-MM-DD-title-of-post.md (e.g., 2023-01-01-new-year-update.md). The date determines ordering (newest first) and permalink.
+# 2. Edit the YAML front matter below with your details.
+# 3. Add the main content after the YAML in Markdown.
+# 4. Place images in /images/ and files in /files/.
+# 5. Optional fields: categories, tags, excerpt (short summary), header (for teaser image).
+# 6. Save and rebuild the site to see it listed under Blog Posts (if enabled).
+
+---
+layout: post
+title:  "Blog Post Number 4"
+categories: jekyll update
+---
+
+Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help. 

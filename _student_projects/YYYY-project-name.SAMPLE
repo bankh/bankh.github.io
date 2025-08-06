@@ -1,0 +1,106 @@
+# SAMPLE TEMPLATE: How to Add a New Project Entry
+# ================================================
+
+# STUDENT PROJECT TEMPLATE - DO NOT PROCESS
+# ==========================================
+
+This is a template file for creating new student projects. 
+To use this template:
+
+1. Copy this file and rename it to: YYYY-project-name.md (e.g., 2024-autonomous-drone.md)
+2. Replace all placeholder text with actual project information
+3. Update all frontmatter fields with real values
+4. Set 'selected: true' if you want the project to appear on about.md
+5. Add media URLs (github, video, poster) for automatic display
+6. Customize the content sections as needed
+7. Delete this comment block
+
+The file will automatically work with both about.md and teaching.html pages.
+
+
+---
+title: "Project Title Here"
+collection: student_projects
+type: "Capstone Project"  # or "Student Project", "Independent Study", etc.
+permalink: /student-projects/YYYY-project-name
+venue: ""  # Leave empty if using sponsor field instead
+sponsor: "Organization/Company Name"  # Primary sponsor or institution
+date: YYYY-01-01  # Project completion date
+location: "City, State"
+selected: true  # true = shows on about.md, false = only on teaching page
+keyword: "Technical Area, Subdomain"  # e.g., "Computer Vision, Robotics"
+github: ""  # GitHub repository URL (optional)
+video: ""  # YouTube video URL (optional)
+video_thumbnail: ""  # Custom video thumbnail image URL (optional, overrides auto YouTube thumbnail)
+poster: ""  # Path to project image/poster (optional)
+excerpt: "Brief description of the project for summary displays."
+---
+
+**Project Name:** [Full Project Title]  
+**Semester and Year:** [Semester] [Year]
+
+**Team Members:**
+- [Student Name 1]
+- [Student Name 2]
+- [Student Name 3]
+- [Student Name 4]
+
+**Short Description:**  
+[Detailed description of the project, its objectives, methods, and outcomes. This should be 2-3 sentences explaining what the project accomplished and its significance.]
+
+<h2>Project Media</h2>
+
+<div style="text-align: center;">
+  <!-- Video thumbnail (if video field is provided) -->
+  {% if page.video and page.video != "" %}
+    {% assign video_id = page.video | split: "youtu.be/" | last | split: "?" | first %}
+    {% if video_id == page.video %}
+      {% assign video_id = page.video | split: "watch?v=" | last | split: "&" | first %}
+    {% endif %}
+    <a href="{{ page.video }}" target="_blank">
+      <img src="https://img.youtube.com/vi/{{ video_id }}/mqdefault.jpg" alt="{{ page.title }} Video Thumbnail" style="width: 120px; height: 90px; margin: 5px; border-radius: 4px;">
+    </a>
+  {% endif %}
+  
+  <!-- Project image/poster (if poster field is provided) -->
+  {% if page.poster and page.poster != "" %}
+    <a href="{{ page.poster }}" target="_blank">
+      <img src="{{ page.poster }}" alt="{{ page.title }} Project Image" style="width: 120px; height: 90px; object-fit: cover; margin: 5px; border-radius: 4px;">
+    </a>
+  {% endif %}
+</div>
+
+<!-- GitHub repository link (if github field is provided) -->
+{% if page.github and page.github != "" %}
+<h2>Source Code</h2>
+<p>
+  <a href="{{ page.github }}" target="_blank" style="background-color: #24292e; color: white; padding: 8px 12px; border-radius: 4px; text-decoration: none; display: inline-block;">
+    <i class="fab fa-github"></i> View on GitHub
+  </a>
+</p>
+{% endif %}
+
+## Project Details
+
+**Technical Approach:**
+[Explain the technical methods, algorithms, tools, and frameworks used]
+
+**Key Achievements:**
+- [Achievement 1]
+- [Achievement 2]
+- [Achievement 3]
+
+**Challenges and Solutions:**
+[Describe any significant challenges faced and how they were overcome]
+
+**Results and Impact:**
+[Quantifiable results, performance metrics, or real-world impact]
+
+**Future Work:**
+[Potential improvements or extensions to the project]
+
+---
+
+**Keywords:** {{ page.keyword }}  
+**Project Duration:** [Start Date] - [End Date]  
+**Technologies Used:** [List of main technologies, programming languages, hardware, etc.]

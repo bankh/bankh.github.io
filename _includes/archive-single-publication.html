@@ -1,0 +1,176 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+{%- comment -%}
+----------------------------------------------------------
+BUILD OPTIONAL "EXTRAS" (note, data, github, presentation,
+video).  Used in both list and card layouts.
+----------------------------------------------------------
+{%- endcomment -%}
+{% capture extras %}
+  {%- if post.note and post.note != '' -%}
+    — <strong>{{ post.note }}</strong>
+  {%- endif -%}
+  {%- if post.data and post.data != '' -%}
+    <a href="{{ post.data }}" target="_blank" class="ref-tag" title="Data"><i class="fas fa-database"></i></a>
+  {%- endif -%}
+  {%- if post.github and post.github != '' -%}
+    <a href="{{ post.github }}" target="_blank" class="ref-tag" title="GitHub"><i class="fab fa-github"></i></a>
+  {%- endif -%}
+  {%- if post.presentation and post.presentation != '' -%}
+    <a href="{{ post.presentation }}" target="_blank" class="ref-tag" title="Slides"><i class="fas fa-file-powerpoint"></i></a>
+  {%- endif -%}
+  {%- if post.video and post.video != '' -%}
+    <a href="{{ post.video }}" target="_blank" class="ref-tag" title="Video"><i class="fas fa-video"></i></a>
+  {%- endif -%}
+{% endcapture %}
+{% assign extras = extras | strip %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+
+    {% if include.type != "list" %}
+      <h2 class="archive__item-title" itemprop="headline" style="margin-bottom: 10px;">
+        {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+      </h2>
+    {% endif %}
+    
+    {% if include.type != "list" and post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+
+    {% if post.collection == 'publications' %}
+      <!-- Convert BibTeX to AMA format for display -->
+      {% if post.citation %}
+        {% assign citation = post.citation | strip %}
+        {% assign authors = "" %}
+        {% assign paper_title = post.title %}  {% comment %} Fallback to post.title {% endcomment %}
+        {% assign venue = "" %}
+        {% assign year = "" %}
+        {% assign address = "" %}
+        {% assign patent_number = "" %}
+        
+        {% if citation contains "@" %}  {% comment %} Full BibTeX entry {% endcomment %}
+          {% assign bib_parts = citation | remove_first: '@inproceedings{' | split: ',' %}
+          {% for part in bib_parts %}
+            {% assign kv = part | strip | split: '=' %}
+            {% if kv.size == 2 %}
+              {% assign key = kv[0] | strip | downcase %}
+              {% assign value = kv[1] | strip | remove_first: '{' | remove: '}' | strip %}
+              {% if key == 'author' %}
+                {% assign authors = value | replace: ' and ', ', ' %}
+              {% elsif key == 'title' %}
+                {% assign paper_title = value %}
+              {% elsif key == 'booktitle' or key == 'journal' %}
+                {% assign venue = value %}
+              {% elsif key == 'year' %}
+                {% assign year = value %}
+              {% elsif key == 'address' %}
+                {% assign address = value %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% else %}  {% comment %} Custom citation format {% endcomment %}
+          {% assign citation_clean = citation | remove: '&quot;' | remove: '<i>' | remove: '</i>' | strip %}
+          {% assign main_parts = citation_clean | split: '. ' %}
+          {% assign authors_year_part = main_parts[0] | strip %}
+          {% assign title_part = main_parts[1] | remove: '"' | strip %}
+          {% assign rest_part = main_parts[2] | strip %}
+          {% assign authors_parts = authors_year_part | split: ', (' %}
+          {% assign authors = authors_parts[0] | replace: 'HS.', 'HS' | replace: ', ', ', ' | strip %}
+          {% assign year = authors_parts[1] | remove: ')' | strip %}
+          {% assign paper_title = title_part %}
+          {% if venue == "Patent" or post.title contains "Patent" %}
+            {% assign patent_number = rest_part %}
+          {% else %}
+            {% assign venue = rest_part %}
+          {% endif %}
+        {% endif %}
+        
+        {% if include.type == "list" %}
+          <span style="font-weight: bold; color: #0ea1c5;">{{ include.label }}</span>
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink" style="text-decoration: none; color: inherit;">
+            {% if post.type == "In Submission" %}
+              {{ post.citation | remove: '&quot;' | remove: '<i>' | remove: '</i>' | strip }}
+            {% elsif post.type == "Patent" %}
+              {% assign office = post.office | default: venue | default: "U.S. Patent and Trademark Office" %}
+              {% assign num   = post.patent_number | default: patent_number %}
+              {% assign auth  = post.inventors | default: post.authors | default: authors %}
+              {% assign office_lc = office | downcase %}
+            
+              {% if office_lc contains "trademark" or office_lc contains "uspto" %}
+                {{ auth }}. ({{ year }}). U.S. Patent No. {{ num }}. Washington, DC: U.S. Patent and Trademark Office.
+              {% else %}
+                {{ auth }}. ({{ year }}). {{ office | split: " " | first }} Patent No. {{ num }}. {{ office }}.
+              {% endif %}
+            {% elsif post.type == "Conference" %}
+              {{ post.authors | default: authors }}. ({{ year }}, {{ post.month }}). {{ paper_title }}. In <em>{{ venue }}</em>{% if post.pages %} (pp. {{ post.pages }}){% endif %}{% if post.location %}. {{ post.location }}{% endif %}.
+            {% elsif post.type == "Journal" %}
+              {{ post.authors | default: authors }}. ({{ year }}). {{ paper_title }}.
+              <em>{{ venue }}</em>{% if post.volume %}, {{ post.volume }}{% endif %}{% if post.number %}({{ post.number }}){% endif %}{% if post.pages %}, {{ post.pages }}{% endif %}.
+            {% else %}
+              {{ authors }}. {{ paper_title }}. {{ venue }}. {{ year }}.
+            {% endif %}
+          </a>{{ extras }}
+        {% else %}
+          <div class="citation-box">
+            <p style="margin: 0; color: #333; font-size: 0.9em;">
+              {% if post.type == "In Submission" %}
+                {{ post.citation | remove: '&quot;' | remove: '<i>' | remove: '</i>' | strip }}
+              {% elsif venue == "Patent" or venue == "Provisional Patent" or venue == "patent" or venue == "provisional patent" or post.title contains "Patent" %}
+                {% assign auth = post.inventors | default: post.authors | default: authors %}
+                {{ auth }}. {{ paper_title }}. {{ patent_number }}. {{ year }}.
+              {% elsif venue contains "Conference" or venue contains "NAMRC" or venue contains "ASME" or venue contains "SME" or post.venue contains "Conference" or post.venue contains "NAMRC" or post.venue contains "ASME" or post.venue contains "SME" %}
+                {{ authors }}. {{ paper_title }}. Paper presented at: {{ venue }}; {{ year }}; {{ address }}.
+              {% else %}
+                {{ authors }}. {{ paper_title }}. {{ venue }}. {{ year }}.
+              {% endif %}{{ extras }}
+            </p>
+          </div>
+        {% endif %}
+      {% else %}
+        <div class="citation-box">
+          <p style="margin: 0; color: #333; font-size: 0.9em;">
+            {% if post.venue %}{{ post.venue }}.{% endif %}
+            {% if post.date %} {{ post.date | default: "1900-01-01" | date: "%Y" }};{% endif %}{{ extras }}
+          </p>
+        </div>
+      {% endif %}
+    {% elsif post.date %}
+      <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% endif %}
+
+    {% if include.type != "list" and post.excerpt and site.read_more != 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif include.type != "list" and post.excerpt and site.read_more == 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% endif %}
+
+  </article>
+</div> 

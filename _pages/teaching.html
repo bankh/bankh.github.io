@@ -7,6 +7,76 @@ author_profile: true
 
 {% include base_path %}
 
+<h2>Courses Taught</h2>
+
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<details>
+<summary><strong>{{ post.title }}</strong> - {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</summary>
+<div style="margin-left: 20px; margin-top: 10px;">
+  {% if post.excerpt %}
+    <p>{{ post.excerpt | markdownify }}</p>
+  {% endif %}
+  <p><a href="{{ base_path }}{{ post.url }}" rel="permalink">View full course details</a></p>
+</div>
+</details>
 {% endfor %}
+
+<hr>
+
+<h2>Selected Student Projects</h2>
+
+{% if site.student_projects %}
+  {% for post in site.student_projects reversed %}
+  <table style="width: 100%; border-collapse: collapse; border: none; margin-bottom: 20px;">
+    <tr>
+      <td style="vertical-align: top; padding-right: 15px; width: 60%; border: none;">
+        <strong>{{ post.title }}</strong><br>
+        {% if post.sponsor %}<i>{{ post.sponsor }}</i>, {% endif %}{{ post.date | default: "1900-01-01" | date: "%Y" }}
+        {% if post.keyword %}
+          <br><span style="background-color: #e8f4f8; color: #2c5aa0; padding: 2px 6px; border-radius: 3px; font-size: 0.85em; margin-right: 5px;">{{ post.keyword }}</span>
+        {% endif %}
+        {% if post.selected %}
+          <span style="background-color: #d4edda; color: #155724; padding: 2px 6px; border-radius: 3px; font-size: 0.85em;">★ Featured</span>
+        {% endif %}
+        {% if post.excerpt %}
+          <br><small>{{ post.excerpt }}</small>
+        {% endif %}
+      </td>
+      <td style="vertical-align: top; text-align: center; width: 120px; border: none;">
+        <!-- Dynamic Video Display -->
+        {% if post.video and post.video != "" %}
+          <a href="{{ post.video }}" target="_blank">
+            {% if post.video_thumbnail and post.video_thumbnail != "" %}
+              <img src="{{ post.video_thumbnail }}" alt="{{ post.title }} Video Thumbnail" style="width: 120px; height: 90px; margin: 5px; border-radius: 4px; object-fit: cover;">
+            {% else %}
+              {% assign video_id = post.video | split: "youtu.be/" | last | split: "?" | first %}
+              {% if video_id == post.video %}
+                {% assign video_id = post.video | split: "watch?v=" | last | split: "&" | first %}
+              {% endif %}
+              <img src="https://img.youtube.com/vi/{{ video_id }}/mqdefault.jpg" alt="{{ post.title }} Video Thumbnail" style="width: 120px; height: 90px; margin: 5px; border-radius: 4px;">
+            {% endif %}
+          </a>
+        {% endif %}
+        
+        <!-- Dynamic Poster/Image Display -->
+        {% if post.poster and post.poster != "" %}
+          <a href="{{ post.poster }}" target="_blank">
+            <img src="{{ post.poster }}" alt="{{ post.title }} Project Image" style="width: 120px; height: 90px; object-fit: cover; margin: 5px; border-radius: 4px;">
+          </a>
+        {% endif %}
+        
+        <!-- Dynamic GitHub Display -->
+        {% if post.github and post.github != "" %}
+          <a href="{{ post.github }}" target="_blank" style="display: block; margin: 5px;">
+            <div style="background-color: #24292e; color: white; padding: 8px; border-radius: 4px; font-size: 0.8em; text-decoration: none;">
+              <i class="fab fa-github"></i> GitHub
+            </div>
+          </a>
+        {% endif %}
+      </td>
+    </tr>
+  </table>
+  {% endfor %}
+{% else %}
+  <p>Student projects will be displayed here once the collection is loaded.</p>
+{% endif %}

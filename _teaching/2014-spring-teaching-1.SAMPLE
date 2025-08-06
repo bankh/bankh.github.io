@@ -1,0 +1,21 @@
+# SAMPLE TEMPLATE: How to Add a New Teaching Entry
+# ===============================================
+# To add a new teaching entry:
+# 1. Copy this file and rename it to YYYY-semester-course-name.md (e.g., 2023-fall-intro-to-ai.md). The date determines ordering (newest first).
+# 2. Edit the YAML front matter below with your details.
+# 3. Add the main content after the YAML (e.g., course description, syllabus link).
+# 4. Place syllabus/PDFs in /files/ and images in /images/.
+# 5. Optional fields: type (e.g., 'Graduate Course'), venue (institution), date (semester start), location.
+# 6. Save and rebuild the site to see it listed under Teaching.
+
+---
+title:  "Teaching role for course 1"
+collection: teaching
+type: "Undergraduate course"
+permalink: /teaching/2014-spring-teaching-1
+venue: "University 1, Department"
+date: 2014-01-01
+location: "City, Country"
+---
+
+This is a description of your teaching experience. There should be one markdown file for every course or teaching role. 

@@ -1,0 +1,69 @@
+# ENHANCED PORTFOLIO TEMPLATE
+# ===========================
+# This template shows how to use the new portfolio features:
+# 1. Icon-based links for various media types
+# 2. Thumbnail displays for videos and slides
+# 3. Publication references
+# 4. Research area integration via selected field
+
+---
+title: "Your Project Title"
+excerpt: "Brief description of your project for summary displays"
+poster: "/images/your_project_image.png"           # Main project image (always shown as thumbnail)
+
+# Video Settings
+video: "https://www.youtube.com/watch?v=VIDEO_ID"  # YouTube video URL
+video_show: true                                   # true = show as thumbnail, false = show as icon
+video_thumbnail: "/images/custom_video_thumb.jpg"  # Optional: custom video thumbnail
+
+# Slides Settings  
+slides: "/files/project_slides.pdf"                # Slides URL or file path
+slide_show: true                                   # true = show as thumbnail, false = show as icon  
+slide_thumbnail: "/images/slide_preview.jpg"       # Required if slide_show is true
+
+# Links (always shown as icons if provided)
+github: "https://github.com/username/repo"         # GitHub repository
+publication: "2024-Paper-Title, 2023-Another-Paper" # Comma-separated publication references
+
+# Portfolio Settings
+selected: true                                     # true = include in research areas (based on first keyword)
+collection: portfolio
+date: 2024-01-01                                  # For chronological sorting
+keyword: "Primary Area, Secondary Area"           # First keyword used for research areas
+
+---
+
+## Usage Examples:
+
+### 1. Video as Thumbnail + Icon Links
+```yaml
+video_show: true       # Shows video thumbnail
+slides: "/files/..."   # Shows slides icon (since slide_show not true)
+github: "https://..."  # Shows GitHub icon
+```
+
+### 2. All Icon Links
+```yaml
+video_show: false      # Shows video icon
+slide_show: false      # Shows slides icon  
+github: "https://..."  # Shows GitHub icon
+```
+
+### 3. Publication References
+```yaml
+publication: "2024-ACM-CatalogBank"  # Single publication
+# OR
+publication: "2024-Paper-One, 2023-Paper-Two"  # Multiple publications
+```
+
+### 4. Research Areas Integration
+```yaml
+selected: true
+keyword: "Computer Vision, Machine Learning"  # "Computer Vision" becomes research area
+```
+
+The template will automatically:
+- Show poster image as main thumbnail
+- Display video/slides as thumbnails OR icons based on _show flags
+- Create clickable icon links for GitHub, publications, etc.
+- Integrate selected items into research areas based on first keyword

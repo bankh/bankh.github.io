@@ -1,0 +1,35 @@
+# Ignore build output and cache directories
+_site/
+.sass-cache/
+.jekyll-cache/
+.cache/
+tmp/
+dist/
+build/
+
+# Ignore local development files and folders
+local/
+*.log
+
+# Ignore dependency and package manager files
+Gemfile.lock
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore vendor and bundle directories
+/vendor/
+.bundle/
+
+# Ignore IDE/editor folders and files
+.vscode/
+.idea/
+*.swp
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore publications in preparation in any folder
+**/*InPrep*

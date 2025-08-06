@@ -1,0 +1,21 @@
+# SAMPLE TEMPLATE: How to Add a New Talk
+# =====================================
+# To add a new talk:
+# 1. Copy this file and rename it to YYYY-MM-DD-short-title.md (e.g., 2023-01-01-conference-talk.md). The date determines ordering (newest first).
+# 2. Edit the YAML front matter below with your details.
+# 3. Add the main content after the YAML (e.g., abstract, slides link).
+# 4. Place slides/PDFs in /files/ and images in /images/.
+# 5. Optional fields: type (e.g., 'Conference Proceeding talk'), venue, location, talk_url (external link), abstract.
+# 6. Save and rebuild the site to see it listed under Talks.
+
+---
+title:  "Talk 1 on Relevant Topic in Your Field"
+collection: talks
+type: "Talk"
+permalink: /talks/2012-03-01-talk-1
+venue: "London School of Testing"
+date: 2012-03-01
+location: "London, UK"
+---
+
+This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. There should be one markdown file for every talk. 
