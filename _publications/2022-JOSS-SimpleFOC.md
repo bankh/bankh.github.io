@@ -63,4 +63,4 @@ SimpleFOC aims to **democratize advanced motor control**. It removes hardware ve
 
 ---
 
-[1]: https://www.theoj.org/joss-papers/joss.04232/10.21105.joss.04232.pdf?utm_source=chatgpt.com "[PDF] SimpleFOC: A Field Oriented Control (FOC) Library ... - Open Journals"
+[1]: https://www.theoj.org/joss-papers/joss.04232/10.21105.joss.04232.pdf.com "[PDF] SimpleFOC: A Field Oriented Control (FOC) Library ... - Open Journals"

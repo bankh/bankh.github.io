@@ -89,4 +89,4 @@ AgPods democratizes precision agriculture by removing infrastructure constraints
 
 ---
 
-[1]: https://patentcut.com/11537107?utm_source=chatgpt.com "Autonomous mobile robots for movable production systems"
+[1]: https://patentcut.com/11537107.com "Autonomous mobile robots for movable production systems"

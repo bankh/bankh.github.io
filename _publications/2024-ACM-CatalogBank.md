@@ -78,6 +78,6 @@ This work introduces **CatalogBank**, a dataset designed to connect **textual en
 | **Tools**     | CatalogBank dataset + DocumentLabeler annotation tool                   |
 | **Use Cases** | NLP layout analysis, engineering design automation, dataset benchmarks  |
 
-[1]: https://www.researchgate.net/publication/384113961_CatalogBank_A_Structured_and_Interoperable_Catalog_Dataset_with_a_Semi-Automatic_Annotation_Tool_DocumentLabeler_for_Engineering_System_Design?utm_source=chatgpt.com "CatalogBank: A Structured and Interoperable Catalog Dataset with a ..."
-[2]: https://www.engr.colostate.edu/~drherber/publications.php?utm_source=chatgpt.com "Publications - Herber@CSU"
-[3]: https://github.com/bankh/CatalogBank?utm_source=chatgpt.com "Part I- CatalogBank: A Structured and Interoperable Catalog Dataset ..."
+[1]: https://www.researchgate.net/publication/384113961_CatalogBank_A_Structured_and_Interoperable_Catalog_Dataset_with_a_Semi-Automatic_Annotation_Tool_DocumentLabeler_for_Engineering_System_Design.com "CatalogBank: A Structured and Interoperable Catalog Dataset with a ..."
+[2]: https://www.engr.colostate.edu/~drherber/publications.php.com "Publications - Herber@CSU"
+[3]: https://github.com/bankh/CatalogBank.com "Part I- CatalogBank: A Structured and Interoperable Catalog Dataset ..."

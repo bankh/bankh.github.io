@@ -50,4 +50,4 @@ This invention describes a **mobile, agile manufacturing robot platform**. The p
 
 ---
 
-[1]: https://patents.google.com/patent/US20190072931A1/en?utm_source=chatgpt.com "US20190072931A1 - Agile manufacturing platform ... - Google Patents"
+[1]: https://patents.google.com/patent/US20190072931A1/en.com "US20190072931A1 - Agile manufacturing platform ... - Google Patents"

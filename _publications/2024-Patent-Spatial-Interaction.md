@@ -91,4 +91,4 @@ This patent, filed by Siemens and granted on **December 3, 2024**, describes
 
 ---
 
-[1]: https://data.epo.org/publication-server/rest/v1.2/publication-dates/2024-08-21/patents/EP3959045NWB1/document.pdf?utm_source=chatgpt.com "[PDF] EP003959045B1* - EP 3 959 045 B1 - European Patent Office"
+[1]: https://data.epo.org/publication-server/rest/v1.2/publication-dates/2024-08-21/patents/EP3959045NWB1/document.pdf.com "[PDF] EP003959045B1* - EP 3 959 045 B1 - European Patent Office"

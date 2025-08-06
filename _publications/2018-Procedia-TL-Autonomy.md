@@ -70,4 +70,4 @@ This framework democratizes **formal methods in manufacturing** by enabling engi
 
 Would you like to explore how this LTL-based planning compares to classical scheduling or motion planning under uncertainty?
 
-[1]: https://bankh.github.io/files/SME_NAMRC_46_Paper_140.pdf?utm_source=chatgpt.com "[PDF] Based Autonomy for Smart Manufacturing Systems"
+[1]: https://bankh.github.io/files/SME_NAMRC_46_Paper_140.pdf.com "[PDF] Based Autonomy for Smart Manufacturing Systems"
