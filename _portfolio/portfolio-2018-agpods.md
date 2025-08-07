@@ -9,6 +9,7 @@ slides: ""
 slide_show: false
 publication: "2022-Patent-US11537107-AgPods"
 github: ""
+scholarurl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vU6oBhwAAAAJ&citation_for_view=vU6oBhwAAAAJ:cFHS6HbyZ2cC'
 selected: true
 collection: portfolio
 date: 2018-01-01

@@ -9,6 +9,7 @@ slides: ""
 slide_show: false
 publication: ""
 github: ""
+scholarurl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vU6oBhwAAAAJ&citation_for_view=vU6oBhwAAAAJ:fPk4N6BV_jEC'
 selected: true
 collection: portfolio
 date: 2020-01-01

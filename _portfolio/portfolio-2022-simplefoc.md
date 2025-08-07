@@ -9,6 +9,7 @@ slides: ""
 slide_show: false
 publication: "2022-JOSS-SimpleFOC"
 github: "https://github.com/simplefoc/Arduino-FOC"
+scholarurl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vU6oBhwAAAAJ&citation_for_view=vU6oBhwAAAAJ:hqOjcs7Dif8C'
 selected: true
 collection: portfolio
 date: 2022-01-01

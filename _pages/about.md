@@ -83,6 +83,9 @@ Research Areas (with Past/ Published Research Projects): <a name="research-areas
           {%- if post.github and post.github != "" -%}
             <a href="{{ post.github }}" target="_blank" class="ref-tag" title="GitHub"><i class="fab fa-github"></i></a>
           {%- endif -%}
+          {%- if post.scholarurl and post.scholarurl != "" -%}
+            <a href="{{ post.scholarurl }}" target="_blank" class="ref-tag" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          {%- endif -%}
           {%- if post.publication and post.publication != "" -%}
             {% assign publications = post.publication | split: "," %}
             {% for pub_ref in publications %}
@@ -169,6 +172,9 @@ Research Areas (with Past/ Published Research Projects): <a name="research-areas
           {%- endif -%}
           {%- if post.github and post.github != "" -%}
             <a href="{{ post.github }}" target="_blank" class="ref-tag" title="GitHub"><i class="fab fa-github"></i></a>
+          {%- endif -%}
+          {%- if post.scholarurl and post.scholarurl != "" -%}
+            <a href="{{ post.scholarurl }}" target="_blank" class="ref-tag" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
           {%- endif -%}
           {%- if post.publication and post.publication != "" -%}
             {% assign publications = post.publication | split: "," %}
@@ -257,6 +263,9 @@ Research Areas (with Past/ Published Research Projects): <a name="research-areas
           {%- if post.github and post.github != "" -%}
             <a href="{{ post.github }}" target="_blank" class="ref-tag" title="GitHub"><i class="fab fa-github"></i></a>
           {%- endif -%}
+          {%- if post.scholarurl and post.scholarurl != "" -%}
+            <a href="{{ post.scholarurl }}" target="_blank" class="ref-tag" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          {%- endif -%}
           {%- if post.publication and post.publication != "" -%}
             {% assign publications = post.publication | split: "," %}
             {% for pub_ref in publications %}
@@ -343,6 +352,9 @@ Research Areas (with Past/ Published Research Projects): <a name="research-areas
           {%- endif -%}
           {%- if post.github and post.github != "" -%}
             <a href="{{ post.github }}" target="_blank" class="ref-tag" title="GitHub"><i class="fab fa-github"></i></a>
+          {%- endif -%}
+          {%- if post.scholarurl and post.scholarurl != "" -%}
+            <a href="{{ post.scholarurl }}" target="_blank" class="ref-tag" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
           {%- endif -%}
           {%- if post.publication and post.publication != "" -%}
             {% assign publications = post.publication | split: "," %}
