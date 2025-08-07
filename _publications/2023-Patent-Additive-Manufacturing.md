@@ -8,7 +8,12 @@ type: 'Provisional Patent'
 patent_number: 'US63/361,810'
 venue: 'USPTO'
 paperurl: ''
-citation: 'Bank, H.S. (2023). &quot;Preparation of operations for automated and continuous additive manufacturing of geometric models.&quot; <i>US63/361,810</i>.'
+citation: '@misc{bank2023preparation,
+  title={Preparation of operations for automated and continuous additive manufacturing of geometric models},
+  author={Bank, Hasan Sinan},
+  year={2023},
+  month=jan,
+  publisher={U.S. Patent and Trademark Office},
+  note={US Provisional Patent Application No. 63/361,810}
+}'
 ---
-
-Recommended citation: Bank, H.S. (2022). "Preparation of operations for automated and continuous additive manufacturing of geometric models." <i>US 63/361,810</i>.
