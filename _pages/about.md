@@ -22,11 +22,13 @@ redirect_from:
 
 About me
 ------
-I am the Founder and President of Craftnetics, Inc., and a former Assistant Professor at California State University, Chico, in the Department of Mechanical Engineering, Mechatronic Engineering, and Advanced Manufacturing. I have led innovative projects in AI, robotics, and advanced manufacturing and have secured approximately $1.5M in funding as PI, Co-PI, or senior personnel, while leading a group of scientists in grant development efforts at Siemens. My research focuses on data (e.g., [CatalogBank](https://github.com/bankh/catalogbank)), investigation of fundamentals (e.g., workflows, architectures, and algorithmic aspects), and their utilization as software (e.g., [DocumentLabeler](https://github.com/bankh/DocumentLabeler), GenAI Workbench, etc.) or hardware (e.g., [GPU Workstations](https://github.com/bankh/GPU_Compute), etc.) stacks to bridge academia and industry.
+I am the Founder and President of Craftnetics, Inc., and a former Assistant Professor at California State University, Chico, in the Department of Mechanical Engineering, Mechatronic Engineering, and Advanced Manufacturing. I have led innovative projects in AI, robotics, and advanced manufacturing and have secured approximately $1.5M in funding as PI, Co-PI, or senior personnel, while leading a group of scientists in grant development efforts at Siemens. 
+
+My research approach centers on building a unified, generative, and malleable digital thread through data (e.g., [CatalogBank](https://github.com/bankh/catalogbank)), investigation of fundamental aspects (e.g., workflows, architectures, and algorithms), and their utilization as software (e.g., [DocumentLabeler](https://github.com/bankh/DocumentLabeler), GenAI Workbench, etc.) or hardware (e.g., [GPU Workstations](https://github.com/bankh/GPU_Compute), etc.) stacks to bridge academia and industry.
 
 <figure style="text-align: center;">
   <img src="/images/former_research.png" alt="Former Research Projects and Future Research Thrusts" style="display: block; margin-left: auto; margin-right: auto;">
-  <figcaption style="margin-top: 0.5em;"><em>Figure 1: Overview of previous research projects</em></figcaption>
+  <figcaption style="margin-top: 0.5em;"><em>Figure 1: Overview of previous research thrusts, T1 (Industry 4.0 Enabled Manufacturing), T2 (Mobile, Intelligent, and Dexterous Complex Production Systems), and T3 (Generative Design and Engineering of Cyber-Physical Systems)</em></figcaption>
 </figure>
 
 ## Research Vision and Approach <a name="vision-approach"></a>
@@ -36,6 +38,10 @@ My research focuses on integrating advanced artificial intelligence and systems 
 My research journey began at Siemens Corporate Technology, where I worked on Industry 4.0 technologies including additive manufacturing support structures, temporal logic-based planning for autonomous systems, and mixed reality programming interfaces. This experience led to the development of innovative concepts like the Siemens SpiderBots—omnidirectional legged robotic systems for expanding 3D printing workspace—and autonomous agricultural production systems (AgPods).
 
 At Colorado State University, I expanded into generative design and engineering of cyber-physical systems, developing multimodal approaches that integrate textual, geometric, and graph data for comprehensive design automation. This work resulted in tools such as CatalogBank (a multimodal engineering design dataset) and DocumentLabeler (for semi-automatic annotation), and GenAI Workbench for advancing the field toward more generalizable and scalable methods.
+
+I investigate the foundational capabilities required for true generative design and engineering of cyber-physical systems—a future where a high-level prompt, such as "design a CubeSat for remote sensing," could initiate an automated process from conceptual architecture to detailed physical design for further realization of the target system. This vision addresses fundamental challenges in engineering knowledge silos, autonomous reasoning, and the need for editable, structured models in real-world workflows.
+
+**Research Impact and Future Vision:** This work provides the essential foundational capability for the next generation of engineering tools. By creating a unified digital model where architecture, function, and physical form are explicitly and automatically connected, it tackles a key prerequisite for next-generation Co-Design approaches. It lays the groundwork for future systems that can concurrently optimize all design aspects for various downstream purposes including **sustainability, education, medicine, policy development, supply-chain optimization, and market analysis**—enabling broader technical and socio-technical impact beyond traditional engineering domains.
 
 My research philosophy emphasizes three key principles: developing generalizable and scalable methods that transcend specific applications, maintaining open and reproducible research practices, and fostering an inclusive collaborative environment. This approach has led to high-impact outcomes including patents, publications, and successful grant proposals.
 
@@ -484,21 +490,44 @@ Publications (Newest 5)<a name="publications"></a>
     {% assign sorted_pubs = sorted_pubs | push: pub %}
   {% endunless %}
 {% endfor %}
-{% assign conf_count = 0 %}
-{% assign pat_count = 0 %}
-{% assign jour_count = 0 %}
+
+<!-- Count total publications by type for reverse numbering -->
+{% assign total_journals = 0 %}
+{% assign total_conferences = 0 %}
+{% assign total_patents = 0 %}
+{% assign total_magazines = 0 %}
+{% for pub in sorted_pubs %}
+  {% if pub.type contains "Patent" %}
+    {% assign total_patents = total_patents | plus: 1 %}
+  {% elsif pub.type contains "Conference" %}
+    {% assign total_conferences = total_conferences | plus: 1 %}
+  {% elsif pub.type contains "Scientific Magazine" or pub.type contains "Magazine" %}
+    {% assign total_magazines = total_magazines | plus: 1 %}
+  {% else %}
+    {% assign total_journals = total_journals | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% assign conf_count = total_conferences %}
+{% assign pat_count = total_patents %}
+{% assign jour_count = total_journals %}
+{% assign mag_count = total_magazines %}
 {% for post in sorted_pubs limit:5 %}
   {% if post.type contains "Patent" %}
-    {% assign pat_count = pat_count | plus: 1 %}
     {% assign current_label = '[P' | append: pat_count | append: ']' %}
+    {% assign pat_count = pat_count | minus: 1 %}
     {% include archive-single-publication.html post=post type='list' label=current_label %}
   {% elsif post.type contains "Conference" %}
-    {% assign conf_count = conf_count | plus: 1 %}
     {% assign current_label = '[C' | append: conf_count | append: ']' %}
+    {% assign conf_count = conf_count | minus: 1 %}
+    {% include archive-single-publication.html post=post type='list' label=current_label %}
+  {% elsif post.type contains "Scientific Magazine" or post.type contains "Magazine" %}
+    {% assign current_label = '[M' | append: mag_count | append: ']' %}
+    {% assign mag_count = mag_count | minus: 1 %}
     {% include archive-single-publication.html post=post type='list' label=current_label %}
   {% else %}
-    {% assign jour_count = jour_count | plus: 1 %}
     {% assign current_label = '[J' | append: jour_count | append: ']' %}
+    {% assign jour_count = jour_count | minus: 1 %}
     {% include archive-single-publication.html post=post type='list' label=current_label %}
   {% endif %}
 {% endfor %}

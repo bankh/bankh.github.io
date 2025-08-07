@@ -42,10 +42,10 @@ author_profile: true
 {% if journal_pubs.size > 0 %}
 <h2>Journal Articles</h2>
 <hr />
-{% assign jour_count = 0 %}
+{% assign jour_count = journal_pubs.size %}
 {% for post in journal_pubs %}
-  {% assign jour_count = jour_count | plus: 1 %}
   {% assign current_label = '[J' | append: jour_count | append: ']' %}
+  {% assign jour_count = jour_count | minus: 1 %}
   {% include archive-single-publication.html post=post type='list' label=current_label %}
 {% endfor %}
 <br />
@@ -55,10 +55,10 @@ author_profile: true
 {% if conference_pubs.size > 0 %}
 <h2>Conference Papers</h2>
 <hr />
-{% assign conf_count = 0 %}
+{% assign conf_count = conference_pubs.size %}
 {% for post in conference_pubs %}
-  {% assign conf_count = conf_count | plus: 1 %}
   {% assign current_label = '[C' | append: conf_count | append: ']' %}
+  {% assign conf_count = conf_count | minus: 1 %}
   {% include archive-single-publication.html post=post type='list' label=current_label %}
 {% endfor %}
 <br />
@@ -68,10 +68,10 @@ author_profile: true
 {% if patent_pubs.size > 0 %}
 <h2>Granted Patents and Applications</h2>
 <hr />
-{% assign pat_count = 0 %}
+{% assign pat_count = patent_pubs.size %}
 {% for post in patent_pubs %}
-  {% assign pat_count = pat_count | plus: 1 %}
   {% assign current_label = '[P' | append: pat_count | append: ']' %}
+  {% assign pat_count = pat_count | minus: 1 %}
   {% include archive-single-publication.html post=post type='list' label=current_label %}
 {% endfor %}
 <br />
@@ -81,10 +81,10 @@ author_profile: true
 {% if magazine_pubs.size > 0 %}
 <h2>Scientific Magazine Articles</h2>
 <hr />
-{% assign mag_count = 0 %}
+{% assign mag_count = magazine_pubs.size %}
 {% for post in magazine_pubs %}
-  {% assign mag_count = mag_count | plus: 1 %}
   {% assign current_label = '[M' | append: mag_count | append: ']' %}
+  {% assign mag_count = mag_count | minus: 1 %}
   {% include archive-single-publication.html post=post type='list' label=current_label %}
 {% endfor %}
 {% endif %}
