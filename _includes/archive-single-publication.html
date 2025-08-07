@@ -34,6 +34,9 @@ video).  Used in both list and card layouts.
   {%- if post.video and post.video != '' -%}
     <a href="{{ post.video }}" target="_blank" class="ref-tag" title="Video"><i class="fas fa-video"></i></a>
   {%- endif -%}
+  {%- if post.scholarurl and post.scholarurl != '' -%}
+    <a href="{{ post.scholarurl }}" target="_blank" class="ref-tag" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+  {%- endif -%}
 {% endcapture %}
 {% assign extras = extras | strip %}
 
@@ -118,16 +121,36 @@ video).  Used in both list and card layouts.
           <a href="{{ base_path }}{{ post.url }}" rel="permalink" style="text-decoration: none; color: inherit;">
             {% if post.type == "In Submission" %}
               {{ post.citation | remove: '&quot;' | remove: '<i>' | remove: '</i>' | strip }}
-            {% elsif post.type == "Patent" %}
-              {% assign office = post.office | default: venue | default: "U.S. Patent and Trademark Office" %}
+            {% elsif post.type contains "Patent" %}
+              {% assign office = post.venue | default: post.office | default: venue | default: "U.S. Patent and Trademark Office" %}
               {% assign num   = post.patent_number | default: patent_number %}
               {% assign auth  = post.inventors | default: post.authors | default: authors %}
               {% assign office_lc = office | downcase %}
             
-              {% if office_lc contains "trademark" or office_lc contains "uspto" %}
-                {{ auth }}. ({{ year }}). U.S. Patent No. {{ num }}. Washington, DC: U.S. Patent and Trademark Office.
+              {% if post.type == "Patent Application" %}
+                {% if office_lc contains "trademark" or office_lc contains "uspto" %}
+                  {{ auth }}. ({{ year }}). U.S. Patent Application No. {{ num }}. Washington, DC: U.S. Patent and Trademark Office.
+                {% elsif office_lc contains "epo" %}
+                  {{ auth }}. ({{ year }}). European Patent Application No. {{ num }}. Munich, Germany: European Patent Office.
+                {% else %}
+                  {{ auth }}. ({{ year }}). {{ office | split: " " | first }} Patent Application No. {{ num }}. {{ office }}.
+                {% endif %}
+              {% elsif post.type == "Provisional Patent" %}
+                {% if office_lc contains "trademark" or office_lc contains "uspto" %}
+                  {{ auth }}. ({{ year }}). U.S. Provisional Patent Application No. {{ num }}. Washington, DC: U.S. Patent and Trademark Office.
+                {% elsif office_lc contains "epo" %}
+                  {{ auth }}. ({{ year }}). European Provisional Patent Application No. {{ num }}. Munich, Germany: European Patent Office.
+                {% else %}
+                  {{ auth }}. ({{ year }}). {{ office | split: " " | first }} Provisional Patent Application No. {{ num }}. {{ office }}.
+                {% endif %}
               {% else %}
-                {{ auth }}. ({{ year }}). {{ office | split: " " | first }} Patent No. {{ num }}. {{ office }}.
+                {% if office_lc contains "trademark" or office_lc contains "uspto" %}
+                  {{ auth }}. ({{ year }}). U.S. Patent No. {{ num }}. Washington, DC: U.S. Patent and Trademark Office.
+                {% elsif office_lc contains "epo" %}
+                  {{ auth }}. ({{ year }}). European Patent No. {{ num }}. Munich, Germany: European Patent Office.
+                {% else %}
+                  {{ auth }}. ({{ year }}). {{ office | split: " " | first }} Patent No. {{ num }}. {{ office }}.
+                {% endif %}
               {% endif %}
             {% elsif post.type == "Conference" %}
               {{ post.authors | default: authors }}. ({{ year }}, {{ post.month }}). {{ paper_title }}. In <em>{{ venue }}</em>{% if post.pages %} (pp. {{ post.pages }}){% endif %}{% if post.location %}. {{ post.location }}{% endif %}.
@@ -145,7 +168,7 @@ video).  Used in both list and card layouts.
             <p style="margin: 0; color: #333; font-size: 0.9em;">
               {% if post.type == "In Submission" %}
                 {{ post.citation | remove: '&quot;' | remove: '<i>' | remove: '</i>' | strip }}
-              {% elsif venue == "Patent" or venue == "Provisional Patent" or venue == "patent" or venue == "provisional patent" or post.title contains "Patent" %}
+              {% elsif venue == "Patent" or venue == "Provisional Patent" or venue == "patent" or venue == "provisional patent" or post.title contains "Patent" or post.type == "Patent" or post.type == "Patent Application" or post.type == "Provisional Patent" %}
                 {% assign auth = post.inventors | default: post.authors | default: authors %}
                 {{ auth }}. {{ paper_title }}. {{ patent_number }}. {{ year }}.
               {% elsif venue contains "Conference" or venue contains "NAMRC" or venue contains "ASME" or venue contains "SME" or post.venue contains "Conference" or post.venue contains "NAMRC" or post.venue contains "ASME" or post.venue contains "SME" %}

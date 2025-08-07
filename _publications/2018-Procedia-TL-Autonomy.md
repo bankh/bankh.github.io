@@ -11,6 +11,7 @@ publisher: 'SME'
 location: 'College Station, TX, USA'
 video: ''
 paperurl: 'http://bankh.github.io/files/SME_NAMRC_46_Paper_140.pdf'
+scholarurl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vU6oBhwAAAAJ&citation_for_view=vU6oBhwAAAAJ:LkGwnXOMwfcC'
 authors: Bank, H.S., Dsouza, S., & Rasam A
 citation: '@article{bank2018temporal,
   title={Temporal logic (TL)-based autonomy for smart manufacturing systems},

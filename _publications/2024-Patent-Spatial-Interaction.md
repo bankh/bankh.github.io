@@ -13,6 +13,7 @@ priority_date: '2019-05-31'
 inventors: 'Bank, H. S., & Little, M'
 assignee: 'Siemens AG'
 paperurl: 'https://patents.google.com/patent/US12157235B2/en'
+scholarurl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vU6oBhwAAAAJ&citation_for_view=vU6oBhwAAAAJ:zA6iFVUQeVQC'
 citation: '@misc{bank2024method,
   title={Method for dynamic multi-dimensional spatio-temporal human machine interaction and feedback},
   author={Bank, Hasan Sinan and Little, Michael},

@@ -10,6 +10,7 @@ month: 'January'
 venue: 'Bilim Teknik - Ocak 2010'
 authors: 'Lazoglu, I., & Bank, H.S'
 paperurl: 'https://www.researchgate.net/publication/235987064_Tasarimdan_Urune_Otomobilin_Yolculugu'
+scholarurl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vU6oBhwAAAAJ&citation_for_view=vU6oBhwAAAAJ:bFI3QPDXJZMC'
 citation: '@article{lazouglu2010tasarimdan,
   title={Tasarimdan urune otomobilin yolculugu},
   author={Lazoglu, I. and Bank, H.S.},

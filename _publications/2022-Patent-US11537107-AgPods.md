@@ -10,6 +10,7 @@ venue: 'USPTO'
 video: 'https://www.youtube.com/watch?v=zYWnstTtivM&ab_channel=HSBank'
 inventors: 'Bank, H. S., & Majeed, R'
 paperurl: 'https://patentimages.storage.googleapis.com/fd/91/a9/45cb31a8b98bf0/US11537107.pdf'
+scholarurl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vU6oBhwAAAAJ&citation_for_view=vU6oBhwAAAAJ:cFHS6HbyZ2cC'
 citation: '@misc{bank2022autonomous,
   title={Autonomous mobile robots for movable production systems},
   author={Bank, Hasan Sinan and Majeed, Rizwan},
