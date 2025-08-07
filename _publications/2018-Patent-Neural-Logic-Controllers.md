@@ -3,10 +3,10 @@ title: "Neural logic controllers"
 collection: publications
 permalink: /publication/2018-Patent-Neural-Logic-Controllers
 excerpt: 'U.S. Patent Application for neural logic controllers by Canedo, Bank, and Ludwig.'
-patent_number: 'EP3818476B1'
+patent_number: 'US17259684'
 date: 2021-04-02
 type: 'Patent Application'
-venue: 'EPO'
+venue: 'USPTO'
 paperurl: 'https://patentimages.storage.googleapis.com/3b/68/d5/20850939dff9e8/US20210150359A1.pdf'
 scholarurl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vU6oBhwAAAAJ&citation_for_view=vU6oBhwAAAAJ:4OULZ7Gr8RgC'
 authors: 'Canedo, A.M., Bank, H.S., & Hartmut, L'
