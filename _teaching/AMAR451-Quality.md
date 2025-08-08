@@ -15,6 +15,9 @@ tags: [quality, TQM, SPC, Six-Sigma, ISO-9000, QFD, lean, auditing, inspection, 
 featured: false
 role: "Instructor"
 years: "2021"
+pdfs:
+  - label: "Syllabus"
+    url: "/files/AMAR_451_syllabus.pdf"
 
 excerpt: "Quality management foundations and tools: TQM, SPC, QFD, ISO 9000, Lean, auditing, and inspection; culture, teamwork, and communication for customer satisfaction." # Course description and outline, pp.1–2, 6–7. :contentReference[oaicite:7]{index=7}
 short_description: "Applied survey of quality systems and improvement methods. Emphasis on customer focus, data-driven decisions, and continuous improvement." # p.1–2. :contentReference[oaicite:8]{index=8}
@@ -99,13 +102,7 @@ syllabus_pdf: /files/amar451-syllabus-fall2021.pdf        # Replace with your si
 # cover_alt: "Quality charts, check sheets, and an inspection station"
 ---
 
-Syllabus
-
-{% if page.syllabus_pdf and page.syllabus_pdf != "" %}
-<a href="{{ page.syllabus_pdf }}" title="Syllabus (PDF)" class="ref-tag"><i class="fas fa-file-pdf"></i></a>
-{% else %}
-<i class="fas fa-file-pdf" title="Syllabus not yet available" style="opacity:0.6;"></i>
-{% endif %}
+{% include teaching-pdfs.html %}
 
 An applied course in quality management. You study TQM, culture, leadership, customer focus, and teams. You learn QFD, SPC, Six Sigma, and Lean. You cover inspection and auditing. Assessments include quizzes, assignments with a project paper, three take‑home exams, and a final. Online delivery uses Blackboard and timed exam windows.
 

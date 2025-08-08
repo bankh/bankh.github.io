@@ -13,7 +13,10 @@ permalink: /teaching/2019-meca482-control  # Adjust if you have an existing URL 
 tags: [control, SISO, modeling, state-space, root-locus, frequency-response, digital-control, reinforcement-learning] # Topics listed on pp.1–3. :contentReference[oaicite:5]{index=5}
 featured: false
 role: "Instructor"
-years: "2019"
+years: "2019-2022"
+pdfs:
+  - label: "Syllabus"
+    url: "/files/MECA_482_syllabus.pdf"
 
 excerpt: "Classical SISO control with state-space introduction. Modeling, stability, root locus, frequency response, digital control, labs, and a group project." # Topics pp.1–3. :contentReference[oaicite:6]{index=6}
 short_description: "Classical SISO control with state-space introduction. Modeling, stability, root locus, frequency response, digital control, and learning-based control (optional)." # pp.1–3. :contentReference[oaicite:7]{index=7}
@@ -120,12 +123,6 @@ syllabus_pdf: /files/meca_482_syllabus.pdf     # Replace with your site path to 
 
 ---
 
-Syllabus
-
-{% if page.syllabus_pdf and page.syllabus_pdf != "" %}
-<a href="{{ page.syllabus_pdf }}" title="Syllabus (PDF)" class="ref-tag"><i class="fas fa-file-pdf"></i></a>
-{% else %}
-<i class="fas fa-file-pdf" title="Syllabus not yet available" style="opacity:0.6;"></i>
-{% endif %}
+{% include teaching-pdfs.html %}
 
 An applied course in classical control with a bridge to modern methods. Topics include modeling in time and frequency domains, stability analysis, steady‑state error, and controller design via root locus and frequency response, with introductions to state‑space and digital control. Laboratory exercises and a team project connect theory to practice.

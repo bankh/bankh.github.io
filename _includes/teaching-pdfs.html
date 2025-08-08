@@ -1,0 +1,54 @@
+{% assign pdfs = page.pdfs %}
+{% if pdfs and pdfs.size > 0 %}
+  <div style="margin: 10px 0; display:flex; align-items:center; flex-wrap:wrap; gap:8px;">
+    <strong style="margin-right:6px;">Resources:</strong>
+    {% for pdf in pdfs %}
+      {% if pdf.url and pdf.url != '' %}
+        <a href="{{ pdf.url }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          <span>{{ pdf.label | default: 'PDF' }}</span>
+        </a>
+      {% else %}
+        <span class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px; opacity:0.6; cursor:not-allowed;">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          <span>{{ pdf.label | default: 'PDF' }} (not available)</span>
+        </span>
+      {% endif %}
+    {% endfor %}
+    {% if page.reference_url and page.reference_url != '' %}
+      <a href="{{ page.reference_url }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        <span>Course page</span>
+      </a>
+    {% endif %}
+  </div>
+{% else %}
+  <div style="margin: 10px 0; display:flex; align-items:center; gap:8px;">
+    <strong style="margin-right:6px;">Resources:</strong>
+    {% if page.syllabus_pdf and page.syllabus_pdf != '' %}
+      <a href="{{ page.syllabus_pdf }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        <span>Syllabus</span>
+      </a>
+      {% if page.reference_url and page.reference_url != '' %}
+        <a href="{{ page.reference_url }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+          <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+          <span>Course page</span>
+        </a>
+      {% endif %}
+    {% else %}
+      <span class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px; opacity:0.6; cursor:not-allowed;">
+        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        <span>Syllabus (not available)</span>
+      </span>
+      {% if page.reference_url and page.reference_url != '' %}
+        <a href="{{ page.reference_url }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+          <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+          <span>Course page</span>
+        </a>
+      {% endif %}
+    {% endif %}
+  </div>
+{% endif %}
+
+

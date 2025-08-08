@@ -14,6 +14,11 @@ tags: [robotics, ROS, kinematics, motion-planning, control, manipulation, wheele
 featured: false
 role: "Instructor"
 years: "2020"
+pdfs:
+  - label: "Syllabus"
+    url: "/files/MECA_470_syllabus.pdf"
+  - label: "Course Flyer"
+    url: "/files/MECA_470_flyer.pdf"
 
 excerpt: "Robotics foundations: motion, kinematics, planning, control, manipulation, and mobile robots. ROS with RoboDK, CoppeliaSim, Gazebo. Team project and labs." # Scope and tools pp.1,4–7; flyer. :contentReference[oaicite:8]{index=8} :contentReference[oaicite:9]{index=9}
 short_description: "Deep and rigorous course in robotics. SE(3) kinematics, PoE, Jacobians, planning with A*/PRM/RRT, contact mechanics, and software-driven labs using ROS and simulators." # Sections and outcomes pp.1,5–7. :contentReference[oaicite:10]{index=10}
@@ -114,17 +119,7 @@ course_flyer_pdf: /files/meca470-technical-elective-flyer.pdf # Source: flyer. :
 # cover_alt: "Industrial robot arm with simulated path and sensors"
 ---
 
-Syllabus
-
-{% if page.syllabus_pdf and page.syllabus_pdf != "" %}
-<a href="{{ page.syllabus_pdf }}" title="Syllabus (PDF)" class="ref-tag"><i class="fas fa-file-pdf"></i></a>
-{% else %}
-<i class="fas fa-file-pdf" title="Syllabus not yet available" style="opacity:0.6;"></i>
-{% endif %}
-
-{% if page.course_flyer_pdf and page.course_flyer_pdf != "" %}
-<a href="{{ page.course_flyer_pdf }}" title="Course Flyer (PDF)" class="ref-tag" style="margin-left: 8px;"><i class="fas fa-file-pdf"></i></a>
-{% endif %}
+{% include teaching-pdfs.html %}
 
 A rigorous robotics course. You study motion, kinematics, planning, and manipulation. You implement algorithms with ROS and simulators and work in teams. Assessments include three exams, a final, homework, exercises, labs, and a project with milestones. The outline and tooling follow the Fall 2020 syllabus and the course flyer.
 

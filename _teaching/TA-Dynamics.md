@@ -17,20 +17,15 @@ featured: false
 excerpt: "Planar and 3D kinematics and kinetics of particles and rigid bodies; work-energy and impulse-momentum methods."
 short_description: "Core undergraduate dynamics covering motion and forces in planar/3D, with energy and momentum methods."
 reference_url: "https://mysite.ku.edu.tr/ilazoglu/teaching/mech-203/"
+pdfs:
+  - label: "Syllabus"
+    url: ""
 syllabus_pdf: ""
 ---
 
-Syllabus
-
-{% if page.syllabus_pdf and page.syllabus_pdf != "" %}
-<a href="{{ page.syllabus_pdf }}" title="Syllabus (PDF)" class="ref-tag"><i class="fas fa-file-pdf"></i></a>
-{% else %}
-<i class="fas fa-file-pdf" title="Syllabus not yet available" style="opacity:0.6;"></i>
-{% endif %}
+{% include teaching-pdfs.html %}
 
 This is a fundamental course in mechanical engineering education targeting all mechanical engineering students at Koç University. It focuses on the concepts and methods of planar and three-dimensional kinematics and kinetics of particles and rigid bodies. Topics include work and energy, and impulse and momentum.
-
-![Dynamics (2009)](https://github.com/bankh/bankh.github.io/blob/master/images/2009-dynamics.jpg)
 
 Role (Teaching Assistant):
 

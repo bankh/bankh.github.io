@@ -17,18 +17,15 @@ featured: false
 excerpt: "Graduate mechatronics integrating mechanics, electronics, control, and computing; hands-on labs with sensors, actuators, and embedded systems."
 short_description: "Graduate mechatronics integrating mechanics, electronics, control, and computing; hands-on labs with sensors, actuators, and embedded systems."
 reference_url: "https://mysite.ku.edu.tr/ilazoglu/teaching/mech-542/"
+pdfs:
+  - label: "Syllabus"
+    url: ""
 syllabus_pdf: ""
 ---
 
 Graduate-level course on the synergistic integration of mechanical systems, electronics, control, and computing to design and implement mechatronic products and processes. Emphasis on connecting theory with laboratory practice using sensors, actuators, signal conditioning, data acquisition, and real-time control.
 
-Syllabus
-
-{% if page.syllabus_pdf and page.syllabus_pdf != "" %}
-<a href="{{ page.syllabus_pdf }}" title="Syllabus (PDF)" class="ref-tag"><i class="fas fa-file-pdf"></i></a>
-{% else %}
-<i class="fas fa-file-pdf" title="Syllabus not yet available" style="opacity:0.6;"></i>
-{% endif %}
+{% include teaching-pdfs.html %}
 
 Core topics included:
 

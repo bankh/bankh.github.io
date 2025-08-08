@@ -17,16 +17,13 @@ featured: false
 excerpt: "Intro to CAD for designing parts, products, and assemblies using Siemens NX; prepares students for downstream ME courses."
 short_description: "Intro to CAD for designing mechanical parts, products, and assemblies using Siemens NX."
 reference_url: "https://mysite.ku.edu.tr/ilazoglu/teaching/mech-206/"
+pdfs:
+  - label: "Syllabus"
+    url: ""
 syllabus_pdf: ""
 ---
 
-Syllabus
-
-{% if page.syllabus_pdf and page.syllabus_pdf != "" %}
-<a href="{{ page.syllabus_pdf }}" title="Syllabus (PDF)" class="ref-tag"><i class="fas fa-file-pdf"></i></a>
-{% else %}
-<i class="fas fa-file-pdf" title="Syllabus not yet available" style="opacity:0.6;"></i>
-{% endif %}
+{% include teaching-pdfs.html %}
 
 This course prepares engineering students for subsequent courses where Computer-Aided Design (CAD) is used as a foundation tool. Students learn to create and design mechanical parts, products, and assemblies.
 

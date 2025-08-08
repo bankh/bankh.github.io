@@ -14,6 +14,9 @@ tags: [automation, CAD, CAM, NC, PLC, microcontrollers, sensors, actuators, ADC,
 featured: false
 role: "Instructor"
 years: "2020"
+pdfs:
+  - label: "Syllabus"
+    url: "/files/SMFG_386_syllabus.pdf"
 
 excerpt: "Automation and manufacturing systems: CAD/CAM, NC, PLCs, robotics, AGVs, FMS, CIM, and vision; labs and a team project." # Course description, p.1. :contentReference[oaicite:6]{index=6}
 short_description: "Design and control of automated production systems. Sensors and actuators, PLCs and microcontrollers, robotics, NC/CAM, FMS/CIM, and perception." # pp.1–2. :contentReference[oaicite:7]{index=7}
@@ -137,13 +140,7 @@ syllabus_pdf: /files/smfg386-syllabus-spring2020.pdf       # Source file is the 
 # cover_alt: "Automated manufacturing cell with robot, conveyor, and PLC I/O"
 ---
 
-Syllabus
-
-{% if page.syllabus_pdf and page.syllabus_pdf != "" %}
-<a href="{{ page.syllabus_pdf }}" title="Syllabus (PDF)" class="ref-tag"><i class="fas fa-file-pdf"></i></a>
-{% else %}
-<i class="fas fa-file-pdf" title="Syllabus not yet available" style="opacity:0.6;"></i>
-{% endif %}
+{% include teaching-pdfs.html %}
 
 An applied course in manufacturing automation. You study production systems and architecture, control hardware, PLCs and microcontrollers, robotics, NC/CAM, cells and FMS/CIM, and computer vision. Labs and a team project tie theory to practice. The outline, grading, software, and policies follow the Spring 2020 syllabus.
 
