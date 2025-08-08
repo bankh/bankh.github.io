@@ -11,7 +11,18 @@ author_profile: true
 
 {% for post in site.teaching reversed %}
 <details>
-<summary><strong>{{ post.title }}</strong> - {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</summary>
+<summary>
+  <strong>{{ post.title }}</strong><br>
+  <span style="font-size: 0.95em; color: #ddd;">
+    {% if post.role %}{{ post.role }}{% else %}Instructor{% endif %},
+    {{ post.type | replace: 'course', 'Class' | replace: 'Course', 'Class' }},
+    <i>{{ post.venue }}</i>,
+    {% if post.years %}{{ post.years }}{% else %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}
+    {% if post.syllabus_pdf and post.syllabus_pdf != "" %}
+      <a href="{{ post.syllabus_pdf }}" title="Syllabus (PDF)" class="ref-tag" style="margin-left: 8px; color: #ddd;"><i class="fas fa-file-pdf"></i></a>
+    {% endif %}
+  </span>
+</summary>
 <div style="margin-left: 20px; margin-top: 10px;">
   {% if post.excerpt %}
     <p>{{ post.excerpt | markdownify }}</p>
