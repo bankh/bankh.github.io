@@ -5,6 +5,7 @@ type: "Undergraduate course"                                # Inferred from 300-
 venue: "California State University, Chico"                 # Header on p.1. :contentReference[oaicite:1]{index=1}
 institution: "California State University, Chico"           # Header on p.1. :contentReference[oaicite:2]{index=2}
 course_code: "SMFG 386"                                     # p.1. :contentReference[oaicite:3]{index=3}
+course_number: 386
 term: "Spring 2020"                                         # p.1. :contentReference[oaicite:4]{index=4}
 level: "undergraduate"                                      # Inferred.
 status: "archived"                                          # Course ran in 2020; set archived for current list.

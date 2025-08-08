@@ -4,6 +4,21 @@ layout: default
 
 {% include base_path %}
 
+<style>
+/* Align talk pages' top spacing with other pages */
+.page__title {
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+  padding-top: 10px !important;
+}
+.page__inner-wrap {
+  padding-top: 20px !important;
+}
+.page__content {
+  margin-top: 20px !important;
+}
+</style>
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% endif %}
@@ -42,7 +57,7 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% include talk-resources.html %}
       </section>
 
       <footer class="page__meta">

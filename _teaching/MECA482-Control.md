@@ -5,6 +5,7 @@ type: "Undergraduate course"               # Level inferred from course numberin
 venue: "California State University, Chico" # Institution on p.1. :contentReference[oaicite:1]{index=1}
 institution: "California State University, Chico" # p.1 header. :contentReference[oaicite:2]{index=2}
 course_code: "MECA 482"                    # p.1. :contentReference[oaicite:3]{index=3}
+course_number: 482
 term: "Fall 2019"                          # p.1. :contentReference[oaicite:4]{index=4}
 level: "undergraduate"                     # Inferred.
 status: "archived"                         # Course ran in 2019; set as archived for current list.
@@ -18,7 +19,7 @@ pdfs:
   - label: "Syllabus"
     url: "/files/MECA_482_syllabus.pdf"
 
-excerpt: "Classical SISO control with state-space introduction. Modeling, stability, root locus, frequency response, digital control, labs, and a group project." # Topics pp.1–3. :contentReference[oaicite:6]{index=6}
+excerpt: "An introduction to classical control (e.g., SISO) and modern control (e.g., state-space). Modeling, stability, root locus, frequency response, digital control, labs, and a group project." # Topics pp.1–3. :contentReference[oaicite:6]{index=6}
 short_description: "Classical SISO control with state-space introduction. Modeling, stability, root locus, frequency response, digital control, and learning-based control (optional)." # pp.1–3. :contentReference[oaicite:7]{index=7}
 
 instructor:

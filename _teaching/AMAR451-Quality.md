@@ -5,6 +5,7 @@ type: "Undergraduate course"                               # Upper-division cour
 venue: "California State University, Chico"                # University named in policies on p.5. :contentReference[oaicite:1]{index=1}
 institution: "California State University, Chico"          # Named in Academic Integrity section, p.5. :contentReference[oaicite:2]{index=2}
 course_code: "AMAR 451"                                    # p.1. :contentReference[oaicite:3]{index=3}
+course_number: 451
 term: "Fall 2021"                                          # p.1. :contentReference[oaicite:4]{index=4}
 level: "undergraduate"                                     # Inferred from numbering.
 status: "archived"                                         # Course ran in 2021; not current.

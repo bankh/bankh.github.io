@@ -1,0 +1,64 @@
+<div style="margin: 10px 0; display:flex; align-items:center; flex-wrap:wrap; gap:8px;">
+  <strong style="margin-right:6px;">Resources:</strong>
+
+  {%- comment -%} Files list or single file {%- endcomment -%}
+  {% if page.files %}
+    {% for f in page.files %}
+      {% if f.url and f.url != '' %}
+        <a href="{{ f.url }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          <span>{{ f.label | default: 'PDF' }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  {% elsif page.file and page.file != '' %}
+    <a href="{{ page.file }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+      <i class="fas fa-file-pdf" aria-hidden="true"></i>
+      <span>PDF</span>
+    </a>
+  {% endif %}
+
+  {%- comment -%} Videos list or single video {%- endcomment -%}
+  {% if page.videos %}
+    {% for v in page.videos %}
+      {% if v.url and v.url != '' %}
+        <a href="{{ v.url }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+          <i class="fas fa-video" aria-hidden="true"></i>
+          <span>{{ v.label | default: 'Video' }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  {% elsif page.video and page.video != '' %}
+    <a href="{{ page.video }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+      <i class="fas fa-video" aria-hidden="true"></i>
+      <span>Video</span>
+    </a>
+  {% endif %}
+
+  {%- comment -%} External links: list or single link/reference {%- endcomment -%}
+  {% assign _ref_url = page.referenceurl | default: page['reference url'] %}
+  {% if page.links %}
+    {% for l in page.links %}
+      {% if l.url and l.url != '' %}
+        <a href="{{ l.url }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+          <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+          <span>{{ l.label | default: 'Link' }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {% if page.link and page.link != '' %}
+      <a href="{{ page.link }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        <span>Link</span>
+      </a>
+    {% endif %}
+    {% if _ref_url and _ref_url != '' %}
+      <a href="{{ _ref_url }}" class="btn btn--small" style="display:inline-flex; align-items:center; gap:6px;">
+        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        <span>Reference</span>
+      </a>
+    {% endif %}
+  {% endif %}
+</div>
+

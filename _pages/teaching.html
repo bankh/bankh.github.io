@@ -9,7 +9,15 @@ author_profile: true
 
 <h2>Courses Taught</h2>
 
-{% for post in site.teaching reversed %}
+{% comment %} Split into Instructor and Teaching Assistant groups {% endcomment %}
+{% assign instructor_courses = site.teaching | where: 'role', 'Instructor' %}
+{% assign ta_courses = site.teaching | where: 'role', 'Teaching Assistant' %}
+
+{% comment %} Sort within each group by numeric course_number descending; fallback to course_code {% endcomment %}
+{% assign instructor_sorted = instructor_courses | sort: 'course_number' %}
+{% assign ta_sorted = ta_courses | sort: 'course_number' %}
+
+{% for post in instructor_sorted reversed %}
 <details>
 <summary>
   <strong>{{ post.title }}</strong><br>
@@ -30,6 +38,43 @@ author_profile: true
       {% assign pdf_links = "<a href='" | append: post.syllabus_pdf | append: "' title='Syllabus (PDF)' class='ref-tag' style='margin-left: 8px; color: #ddd;'><i class='fas fa-file-pdf'></i></a>" %}
     {% endif %}
     {{ pdf_links | strip_newlines }}
+    {% if post.reference_url and post.reference_url != '' %}
+      <a href="{{ post.reference_url }}" title="Course page" class="ref-tag" style="margin-left: 8px; color: #ddd;"><i class="fas fa-external-link-alt"></i></a>
+    {% endif %}
+  </span>
+</summary>
+<div style="margin-left: 20px; margin-top: 10px;">
+  {% if post.excerpt %}
+    <p>{{ post.excerpt | markdownify }}</p>
+  {% endif %}
+  <p><a href="{{ base_path }}{{ post.url }}" rel="permalink">View full course details</a></p>
+</div>
+</details>
+{% endfor %}
+{% for post in ta_sorted reversed %}
+<details>
+<summary>
+  <strong>{{ post.title }}</strong><br>
+  <span style="font-size: 0.95em; color: #ddd;">
+    {% if post.role %}{{ post.role }}{% else %}Instructor{% endif %},
+    {{ post.type | replace: 'course', 'Class' | replace: 'Course', 'Class' }},
+    <i>{{ post.venue }}</i>,
+    {% if post.years %}{{ post.years }}{% else %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}
+    {% assign pdf_links = "" %}
+    {% if post.pdfs %}
+      {% for pdf in post.pdfs %}
+        {% if pdf.url and pdf.url != "" %}
+          {% capture one %}<a href="{{ pdf.url }}" title="{{ pdf.label | default: 'PDF' }}" class="ref-tag" style="margin-left: 8px; color: #ddd;"><i class="fas fa-file-pdf"></i></a>{% endcapture %}
+          {% assign pdf_links = pdf_links | append: one %}
+        {% endif %}
+      {% endfor %}
+    {% elsif post.syllabus_pdf and post.syllabus_pdf != "" %}
+      {% assign pdf_links = "<a href='" | append: post.syllabus_pdf | append: "' title='Syllabus (PDF)' class='ref-tag' style='margin-left: 8px; color: #ddd;'><i class='fas fa-file-pdf'></i></a>" %}
+    {% endif %}
+    {{ pdf_links | strip_newlines }}
+    {% if post.reference_url and post.reference_url != '' %}
+      <a href="{{ post.reference_url }}" title="Course page" class="ref-tag" style="margin-left: 8px; color: #ddd;"><i class="fas fa-external-link-alt"></i></a>
+    {% endif %}
   </span>
 </summary>
 <div style="margin-left: 20px; margin-top: 10px;">

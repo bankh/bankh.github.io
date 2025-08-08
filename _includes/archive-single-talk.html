@@ -26,11 +26,40 @@
       </div>
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {%- assign _ref_url = post.referenceurl | default: post['reference url'] -%}
+      {%- comment -%} Inline icons next to title for quick access {%- endcomment -%}
+      {%- if post.videos -%}
+        {%- for v in post.videos -%}
+          {%- if v.url and v.url != '' -%}
+            <a href="{{ v.url }}" title="Video" style="margin-left: 6px;"><i class="fas fa-video" aria-hidden="true"></i><span class="sr-only">Video</span></a>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- elsif post.video and post.video != '' -%}
+        <a href="{{ post.video }}" title="Video" style="margin-left: 6px;"><i class="fas fa-video" aria-hidden="true"></i><span class="sr-only">Video</span></a>
+      {%- endif -%}
+      {%- if post.files -%}
+        {%- for f in post.files -%}
+          {%- if f.url and f.url != '' -%}
+            <a href="{{ f.url }}" title="File" style="margin-left: 6px;"><i class="fas fa-file-pdf" aria-hidden="true"></i><span class="sr-only">File</span></a>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- elsif post.file and post.file != '' -%}
+        <a href="{{ post.file }}" title="File" style="margin-left: 6px;"><i class="fas fa-file-pdf" aria-hidden="true"></i><span class="sr-only">File</span></a>
+      {%- endif -%}
+      {%- if post.links -%}
+        {%- for l in post.links -%}
+          {%- if l.url and l.url != '' -%}
+            <a href="{{ l.url }}" title="Link" style="margin-left: 6px;"><i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="sr-only">Link</span></a>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if post.link and post.link != '' -%}
+        <a href="{{ post.link }}" title="External link" style="margin-left: 6px;"><i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="sr-only">External</span></a>
+      {%- endif -%}
+      {%- if _ref_url and _ref_url != '' -%}
+        <a href="{{ _ref_url }}" title="Reference" style="margin-left: 6px;"><i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="sr-only">Reference</span></a>
+      {%- endif -%}
     </h2>
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>

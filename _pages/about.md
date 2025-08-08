@@ -555,7 +555,7 @@ Talks/ Presentations/ Media (Newest 5)<a name="talks-presentations"></a>
 <!-- <details> -->
 <!-- <summary>Talks/ Presentations (Newest 5)</summary> -->
 
-<ol style="list-style-type: decimal; padding-left: 20px;">
+<ol style="list-style-type: decimal; list-style-position: outside; padding-left: 1.5em; margin-left: 0; direction: ltr; text-align: left;">
 {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
 {% for post in sorted_talks limit:5 %}
     <li style="margin-bottom: 15px;">
