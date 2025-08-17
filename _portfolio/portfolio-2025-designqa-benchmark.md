@@ -8,7 +8,7 @@ video_thumbnail: ""
 slides: "https://github.com/bankh/design_qa_IDETC2025/blob/main/docs/bankh/slide_deck/IDETC_2025.pdf"
 slide_show: false
 slide_thumbnail: ""
-poster: "https://github.com/bankh/design_qa_IDETC2025/blob/main/docs/bankh/slide_deck/teaser.png"
+poster: "academicpages.github.io/files/teaser.png"
 publication: "2025-DesignQA-Benchmark"
 github: "https://github.com/bankh/design_qa_IDETC2025"
 project_link: ""
