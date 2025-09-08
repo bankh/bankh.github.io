@@ -1,7 +1,7 @@
 ---
 title: "PDF Reference Helper - Chrome Extension"
 excerpt: "Chrome extension to extract references from academic PDFs with Google Scholar links, BibTeX export, and a persistent window"
-poster: "/images/PDF_Reference_Persistent_Window.png"
+poster: "/images/PDF_References_Extracted_Style_Author-Year.gif"
 advisor: ""
 video: ""
 video_show: false
