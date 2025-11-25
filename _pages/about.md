@@ -51,7 +51,7 @@ My research philosophy emphasizes three key principles: developing generalizable
 Research Areas (with Past/ Published Research Projects): <a name="research-areas"></a>
 
 <details>
-<summary><strong>Artificial Intelligence and Generative Design</strong></summary>
+<summary class="portfolio-section-summary" style="cursor: pointer; transition: background 0.2s, color 0.2s; padding: 5px; border-radius: 4px;"><strong>Artificial Intelligence and Generative Design</strong></summary>
 {% assign ai_portfolio = site.portfolio | where: "selected", true | sort: 'date' | reverse %}
 {% for post in ai_portfolio %}
   {% if post.keyword contains "Artificial Intelligence and Generative Design" %}
@@ -141,16 +141,7 @@ Research Areas (with Past/ Published Research Projects): <a name="research-areas
 </details>
 
 <details>
-<summary 
-  onmouseover="this.style.backgroundColor='#e8f4f8'; this.style.color='#2c5aa0';" 
-  onmouseout="this.style.backgroundColor=''; this.style.color='';" 
-  style="transition: background-color 0.2s, color 0.2s; cursor: pointer;"
->
-  <strong>Advanced Manufacturing (Smart Manufacturing / Industry 4.0)</strong>
-  <span style="font-weight: normal; font-size: 0.95em;">
-    (click to expand and see more)
-  </span>
-</summary>
+<summary class="portfolio-section-summary" style="cursor: pointer; transition: background 0.2s, color 0.2s; padding: 5px; border-radius: 4px;"><strong>Advanced Manufacturing (Smart Manufacturing / Industry 4.0)</strong></summary>
 {% assign manufacturing_portfolio = site.portfolio | where: "selected", true | sort: 'date' | reverse %}
 {% for post in manufacturing_portfolio %}
   {% if post.keyword contains "Advanced Manufacturing" or post.keyword contains "Smart Manufacturing" %}
@@ -240,16 +231,7 @@ Research Areas (with Past/ Published Research Projects): <a name="research-areas
 </details>
 
 <details>
-<summary 
-  onmouseover="this.style.backgroundColor='#e8f4f8'; this.style.color='#2c5aa0';" 
-  onmouseout="this.style.backgroundColor=''; this.style.color='';" 
-  style="transition: background-color 0.2s, color 0.2s; cursor: pointer;"
->
-  Robotics and Autonomous Systems
-  <span style="font-weight: normal; font-size: 0.95em;">
-    (click to expand and see more)
-  </span>
-</summary>
+<summary class="portfolio-section-summary" style="cursor: pointer; transition: background 0.2s, color 0.2s; padding: 5px; border-radius: 4px;"><strong>Robotics and Autonomous Systems</strong></summary>
 {% assign robotics_portfolio = site.portfolio | where: "selected", true | sort: 'date' | reverse %}
 {% for post in robotics_portfolio %}
   {% if post.keyword contains "Robotics and Autonomous Systems" %}
