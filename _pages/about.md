@@ -141,7 +141,16 @@ Research Areas (with Past/ Published Research Projects): <a name="research-areas
 </details>
 
 <details>
-<summary><strong>Advanced Manufacturing (Smart Manufacturing/ Industry 4.0)</strong></summary>
+<summary 
+  onmouseover="this.style.backgroundColor='#e8f4f8'; this.style.color='#2c5aa0';" 
+  onmouseout="this.style.backgroundColor=''; this.style.color='';" 
+  style="transition: background-color 0.2s, color 0.2s; cursor: pointer;"
+>
+  <strong>Advanced Manufacturing (Smart Manufacturing / Industry 4.0)</strong>
+  <span style="font-weight: normal; font-size: 0.95em;">
+    (click to expand and see more)
+  </span>
+</summary>
 {% assign manufacturing_portfolio = site.portfolio | where: "selected", true | sort: 'date' | reverse %}
 {% for post in manufacturing_portfolio %}
   {% if post.keyword contains "Advanced Manufacturing" or post.keyword contains "Smart Manufacturing" %}
@@ -231,7 +240,16 @@ Research Areas (with Past/ Published Research Projects): <a name="research-areas
 </details>
 
 <details>
-<summary><strong>Robotics and Autonomous Systems</strong></summary>
+<summary 
+  onmouseover="this.style.backgroundColor='#e8f4f8'; this.style.color='#2c5aa0';" 
+  onmouseout="this.style.backgroundColor=''; this.style.color='';" 
+  style="transition: background-color 0.2s, color 0.2s; cursor: pointer;"
+>
+  Robotics and Autonomous Systems
+  <span style="font-weight: normal; font-size: 0.95em;">
+    (click to expand and see more)
+  </span>
+</summary>
 {% assign robotics_portfolio = site.portfolio | where: "selected", true | sort: 'date' | reverse %}
 {% for post in robotics_portfolio %}
   {% if post.keyword contains "Robotics and Autonomous Systems" %}
@@ -321,7 +339,15 @@ Research Areas (with Past/ Published Research Projects): <a name="research-areas
 </details>
 
 <details>
-<summary><strong>Optimization, Control, and Systems Engineering</strong></summary>
+<summary class="portfolio-section-summary" style="cursor: pointer; transition: background 0.2s, color 0.2s; padding: 5px; border-radius: 4px;">
+  <strong>Optimization, Control, and Systems Engineering</strong>
+</summary>
+<style>
+  .portfolio-section-summary:hover {
+    background: #e8f4f8;
+    color: #2c5aa0;
+  }
+</style>
 {% assign optimization_portfolio = site.portfolio | where: "selected", true | sort: 'date' | reverse %}
 {% for post in optimization_portfolio %}
   {% if post.keyword contains "Optimization, Control, and Systems Engineering" %}
@@ -426,7 +452,16 @@ about a project at Craftnetics, please send an email to info@craftnetics.ai. Ple
 Student Projects <a name="student-projects"></a>
 ------
 <details>
-<summary>Selected Student Projects - Expand to see more</summary>
+<summary 
+  onmouseover="this.style.backgroundColor='#e8f4f8'; this.style.color='#2c5aa0';" 
+  onmouseout="this.style.backgroundColor=''; this.style.color='';" 
+  style="transition: background-color 0.2s, color 0.2s; cursor: pointer;"
+>
+  Selected Student Projects 
+  <span style="font-weight: normal; font-size: 0.95em;">
+    (click to expand and see more)
+  </span>
+</summary>
 
 {% if site.student_projects %}
   {% assign selected_projects = site.student_projects | where: "selected", true | sort: 'date' | reverse %}
