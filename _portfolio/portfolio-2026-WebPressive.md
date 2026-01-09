@@ -11,7 +11,7 @@ publication: ""
 github: "https://github.com/WebPressive/webpressive.github.io"
 selected: true
 collection: portfolio
-date: 2025-01-01
+date: 2026-01-08
 keyword: "Artificial Intelligence and Generative Design"
 ---
 
