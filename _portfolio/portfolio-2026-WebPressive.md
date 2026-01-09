@@ -9,6 +9,7 @@ slides: ""
 slide_show: false
 publication: ""
 github: "https://github.com/WebPressive/webpressive.github.io"
+project_link: "https://webpressive.github.io/"
 selected: true
 collection: portfolio
 date: 2026-01-08
