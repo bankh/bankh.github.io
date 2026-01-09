@@ -13,7 +13,7 @@ project_link: "https://webpressive.github.io/"
 selected: true
 collection: portfolio
 date: 2026-01-08
-keyword: "Software Engineering and Design"
+keyword: "Software Engineering and Technical Communication"
 ---
 
 WebPressive is a lightweight, browser-based presenter for LaTeX Beamer PDFs. It provides dual-screen mode (audience and presenter views), speaker notes with a timer, and a spotlight/laser pointer—making it easy to present directly from the web.
