@@ -7,7 +7,7 @@ video: ""
 video_show: false
 slides: ""
 slide_show: false
-publication: "2025-InSubmission-DSM-Generation"
+publication: "2025-UnderReview-DSM-Generation"
 github: ""
 selected: true
 collection: portfolio
