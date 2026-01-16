@@ -61,6 +61,8 @@ layout: default
   </p>
 {% elsif page.collection == 'student_projects' %}
   <p style="margin-top: 10px; margin-bottom: 15px;"> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' and page.type and (page.type == 'In Submission' or page.type == 'In Preparation' or page.type == 'Under Review' or page.type == 'Submitted/Under Review') %}
+          <p>Submitted/Under Review in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}.</p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
