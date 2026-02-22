@@ -1,0 +1,4 @@
+# Override for local development: use relative URLs so assets and links work at http://localhost:4000
+# Usage: jekyll serve --config _config.yml,_config_dev.yml
+url: ""
+baseurl: ""

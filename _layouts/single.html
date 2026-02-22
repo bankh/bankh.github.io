@@ -61,6 +61,8 @@ layout: default
   </p>
 {% elsif page.collection == 'student_projects' %}
   <p style="margin-top: 10px; margin-bottom: 15px;"> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' and page.type and (page.type == 'In Submission' or page.type == 'In Preparation' or page.type == 'Under Review' or page.type == 'Submitted/Under Review') %}
+          <p>Submitted/Under Review in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}.</p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -78,7 +80,13 @@ layout: default
             <pre style="background-color: #2d3748; color: #e2e8f0; padding: 15px; border-radius: 5px; overflow-x: auto; font-size: 0.9em; white-space: pre-wrap; word-wrap: break-word; font-family: 'Courier New', monospace; line-height: 1.6;">{% assign formatted_citation = page.citation | replace: '  ', ' ' | replace: '},', '},' | replace: '{', ' {' | replace: '}', '} ' | replace: '  ', ' ' %}{{ formatted_citation }}</pre>
             {% if page.paperurl or page.slidesurl or page.bibtexurl %}
               <div style="margin-top: 15px;">
-                {% if page.paperurl %}<a href="{{ page.paperurl }}" class="btn btn--small" style="margin-right: 10px;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download Paper</a>{% endif %}
+                {% if page.paperurl %}
+                  {% if page.paperurl contains 'arxiv.org' %}
+                    <a href="{{ page.paperurl }}" class="btn btn--small" style="margin-right: 10px;"><i class="ai ai-arxiv" aria-hidden="true"></i> arXiv</a>
+                  {% else %}
+                    <a href="{{ page.paperurl }}" class="btn btn--small" style="margin-right: 10px;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download Paper</a>
+                  {% endif %}
+                {% endif %}
                 {% if page.slidesurl %}<a href="{{ page.slidesurl }}" class="btn btn--small" style="margin-right: 10px;"><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> Download Slides</a>{% endif %}
                 {% if page.bibtexurl %}<a href="{{ page.bibtexurl }}" class="btn btn--small" style="margin-right: 10px;"><i class="fa fa-file-text-o" aria-hidden="true"></i> Download BibTeX</a>{% endif %}
               </div>
