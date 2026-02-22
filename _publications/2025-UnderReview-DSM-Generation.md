@@ -6,7 +6,7 @@ excerpt: 'This paper presents a retrieval augmented and language model-driven ap
 date: 2025-01-01
 type: 'Submitted/Under Review'
 venue: 'The Journal of Systems Engineering'
-paperurl: ''
+paperurl: 'https://arxiv.org/abs/2602.16715'
 citation: 'Bank, H.S., & Herber, D.R. (2025). "Retrieval Augmented (Knowledge-Graph) and Language Model-Driven Design Structure Matrix (DSM) Generation for Cyber-Physical Systems." <em>Submitted/Under Review The Journal of Systems Engineering.</em>'
 ---
 

@@ -1,5 +1,6 @@
-{% if site.url %}
+{% comment %} Use relative paths when url is blank (e.g. _config_dev.yml for localhost) {% endcomment %}
+{% if site.url and site.url != "" %}
   {% assign base_path = site.url | append: site.baseurl %}
 {% else %}
-  {% assign base_path = site.github.url %}
+  {% assign base_path = "" %}
 {% endif %}

@@ -37,6 +37,13 @@ video).  Used in both list and card layouts.
   {%- if post.scholarurl and post.scholarurl != '' -%}
     <a href="{{ post.scholarurl }}" target="_blank" class="ref-tag" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
   {%- endif -%}
+  {%- if post.paperurl and post.paperurl != '' -%}
+    {%- if post.paperurl contains 'arxiv.org' -%}
+      <a href="{{ post.paperurl }}" target="_blank" class="ref-tag" title="arXiv"><i class="ai ai-arxiv" aria-hidden="true"></i></a>
+    {%- else -%}
+      <a href="{{ post.paperurl }}" target="_blank" class="ref-tag" title="Paper"><i class="fas fa-file-pdf"></i></a>
+    {%- endif -%}
+  {%- endif -%}
 {% endcapture %}
 {% assign extras = extras | strip %}
 
@@ -119,7 +126,7 @@ video).  Used in both list and card layouts.
         {% if include.type == "list" %}
           <span style="font-weight: bold; color: #0ea1c5;">{{ include.label }}</span>
           <a href="{{ base_path }}{{ post.url }}" rel="permalink" style="text-decoration: none; color: inherit;">
-            {% if post.type == "In Submission" %}
+            {% if post.type == "In Submission" or post.type == "Submitted/Under Review" or post.type == "Under Review" %}
               {{ post.citation | remove: '&quot;' | remove: '<i>' | remove: '</i>' | strip }}
             {% elsif post.type contains "Patent" %}
               {% assign office = post.venue | default: post.office | default: venue | default: "U.S. Patent and Trademark Office" %}
@@ -162,11 +169,12 @@ video).  Used in both list and card layouts.
             {% else %}
               {{ authors }}. {{ paper_title }}. {{ venue }}. {{ year }}.
             {% endif %}
-          </a>{{ extras }}
+          </a>
+          {% if extras != "" %}<span style="margin-left: 0.35em;">{{ extras }}</span>{% endif %}
         {% else %}
           <div class="citation-box">
             <p style="margin: 0; color: #333; font-size: 0.9em;">
-              {% if post.type == "In Submission" %}
+              {% if post.type == "In Submission" or post.type == "Submitted/Under Review" or post.type == "Under Review" %}
                 {{ post.citation | remove: '&quot;' | remove: '<i>' | remove: '</i>' | strip }}
               {% elsif venue == "Patent" or venue == "Provisional Patent" or venue == "patent" or venue == "provisional patent" or post.title contains "Patent" or post.type == "Patent" or post.type == "Patent Application" or post.type == "Provisional Patent" %}
                 {% assign auth = post.inventors | default: post.authors | default: authors %}
@@ -177,7 +185,7 @@ video).  Used in both list and card layouts.
                 {{ post.authors | default: authors }}. ({{ year }}). {{ paper_title }}. <em>{{ venue }}</em>{% if post.number %}, ({{ post.number }}){% endif %}{% if post.pages %}, {{ post.pages }}{% endif %}.
               {% else %}
                 {{ authors }}. {{ paper_title }}. {{ venue }}. {{ year }}.
-              {% endif %}{{ extras }}
+              {% endif %}{% if extras != "" %} {{ extras }}{% endif %}
             </p>
           </div>
         {% endif %}
