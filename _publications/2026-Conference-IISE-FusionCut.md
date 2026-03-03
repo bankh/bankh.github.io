@@ -1,0 +1,20 @@
+---
+title: "FusionCut: Boundary Representation (BRep) Based and Cloud-Ready Cutting Workpiece Engagement (CWE) for Virtual Machining"
+collection: publications
+permalink: /publication/2026-Conference-IISE-FusionCut
+excerpt: 'This paper presents FusionCut, a BRep-based and cloud-ready approach for cutting workpiece engagement in virtual machining.'
+date: 2026-05-17
+type: 'Conference'
+venue: 'IISE Annual Conference 2026'
+month: 'May'
+paperurl: 'https://drive.google.com/file/d/1GD6g_6EAsCSqHC_HhZDvn_GgvwICh4RK/view?usp=sharing'
+authors: 'Bank, H. S., & Bugdayci, N. B'
+citation: '@inproceedings{bank2026fusioncut,
+  title={FusionCut: Boundary Representation (BRep) Based and Cloud-Ready Cutting Workpiece Engagement (CWE) for Virtual Machining},
+  author={Bank, Hasan Sinan and Bugdayci, Nuri Bugra},
+  booktitle={IISE Annual Conference 2026},
+  year={2026}
+}'
+---
+
+<!-- Accepted at IISE Annual Conference, 2026. -->
