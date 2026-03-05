@@ -7,7 +7,7 @@ date: 2026-05-17
 type: 'Conference'
 venue: 'IISE Annual Conference 2026'
 month: 'May'
-paperurl: 'https://arxiv.org/pdf/2603.00251'
+paperurl: 'https://arxiv.org/abs/2603.00251'
 authors: 'Bank, H. S., & Herber, D. R'
 citation: '@inproceedings{bank2026genaiworkbench,
   title={GenAI Workbench: AI-Assisted Analysis and Synthesis of Engineering Systems from Multimodal Engineering Data},

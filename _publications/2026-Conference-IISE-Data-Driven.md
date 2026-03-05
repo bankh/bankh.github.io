@@ -7,8 +7,9 @@ date: 2026-05-17
 type: 'Conference'
 venue: 'IISE Annual Conference 2026'
 month: 'May'
-paperurl: 'https://drive.google.com/file/d/1WlyvgGH2qfzgxAVnn8pMf_Sc1iD-XZsW/view?usp=sharing'
+paperurl: 'https://arxiv.org/abs/2603.00399'
 data: 'https://data-driven-engineering-conferences.github.io/'
+dataverse: 'https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/8NYZTI'
 authors: 'Bank, H. S., & Eaton, C'
 citation: '@inproceedings{bank2026datadriven,
   title={A Data-Driven Analysis for Engineering Conferences: the Institute of Industrial and Systems Engineers (IISE) Annual Conference Proceedings (2002-2025)},

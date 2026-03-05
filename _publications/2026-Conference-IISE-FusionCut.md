@@ -7,7 +7,7 @@ date: 2026-05-17
 type: 'Conference'
 venue: 'IISE Annual Conference 2026'
 month: 'May'
-paperurl: 'https://drive.google.com/file/d/1GD6g_6EAsCSqHC_HhZDvn_GgvwICh4RK/view?usp=sharing'
+paperurl: 'https://arxiv.org/abs/2603.03504'
 authors: 'Bank, H. S., & Bugdayci, N. B'
 citation: '@inproceedings{bank2026fusioncut,
   title={FusionCut: Boundary Representation (BRep) Based and Cloud-Ready Cutting Workpiece Engagement (CWE) for Virtual Machining},
