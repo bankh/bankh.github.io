@@ -22,7 +22,7 @@ redirect_from:
 
 About me
 ------
-I am the Founder and President of Craftnetics, Inc., and a former Assistant Professor at California State University, Chico, in the Department of Mechanical Engineering, Mechatronic Engineering, and Advanced Manufacturing. I have led innovative projects in AI, robotics, and advanced manufacturing and have secured approximately $1.5M in funding as PI, Co-PI, or senior personnel, while leading a group of scientists in grant development efforts at Siemens. 
+Researcher, builder, founder. I work on AI, robotics, and advanced manufacturing — and the digital thread between them.
 
 My research approach centers on building a unified, generative, and malleable digital thread through data (e.g., [CatalogBank](https://github.com/bankh/catalogbank)), investigation of fundamental aspects (e.g., workflows, architectures, and algorithms), and their utilization as software (e.g., [DocumentLabeler](https://github.com/bankh/DocumentLabeler), GenAI Workbench, etc.) or hardware (e.g., [GPU Workstations](https://github.com/bankh/GPU_Compute), etc.) stacks to bridge academia and industry.
 
