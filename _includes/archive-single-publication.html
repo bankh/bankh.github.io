@@ -31,8 +31,9 @@ video).  Used in both list and card layouts.
   {%- if post.github and post.github != '' -%}
     <a href="{{ post.github }}" target="_blank" class="ref-tag" title="GitHub"><i class="fab fa-github"></i></a>
   {%- endif -%}
-  {%- if post.presentation and post.presentation != '' -%}
-    <a href="{{ post.presentation }}" target="_blank" class="ref-tag" title="Slides"><i class="fas fa-file-powerpoint"></i></a>
+  {%- assign slides_link = post.slidesurl | default: post.presentation -%}
+  {%- if slides_link and slides_link != '' -%}
+    <a href="{{ slides_link }}" target="_blank" class="ref-tag" title="Slides"><i class="fas fa-file-powerpoint"></i></a>
   {%- endif -%}
   {%- if post.video and post.video != '' -%}
     <a href="{{ post.video }}" target="_blank" class="ref-tag" title="Video"><i class="fas fa-video"></i></a>
