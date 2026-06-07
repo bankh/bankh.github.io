@@ -8,13 +8,14 @@ author_profile: true
 {% include base_path %}
 
 {% if site.portfolio.size > 0 %}
+  {# post.date is intentionally kept in each item's front matter: it drives this chronological sort and is retained for logging / code structure. It is just no longer rendered in the UI. #}
   {% assign sorted_portfolio = site.portfolio | sort: 'date' | reverse %}
   {% for post in sorted_portfolio %}
   <table style="width: 100%; border-collapse: collapse; border: none; margin-bottom: 20px;">
     <tr>
       <td style="vertical-align: top; padding-right: 15px; width: 60%; border: none;">
         <strong>{{ post.title }}</strong><br>
-        {% if post.advisor and post.advisor != "" %}<i>{{ post.advisor }}</i>, {% endif %}{{ post.date | default: "1900-01-01" | date: "%Y" }}
+        {% if post.advisor and post.advisor != "" %}<i>{{ post.advisor }}</i>{% endif %}
         {% if post.keyword %}
           <br><span style="background-color: #e8f4f8; color: #2c5aa0; padding: 2px 6px; border-radius: 3px; font-size: 0.85em; margin-right: 5px;">{{ post.keyword }}</span>
         {% endif %}
