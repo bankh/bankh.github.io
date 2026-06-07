@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 {% if site.portfolio.size > 0 %}
-  {# post.date is intentionally kept in each item's front matter: it drives this chronological sort and is retained for logging / code structure. It is just no longer rendered in the UI. #}
+  {% comment %} post.date is intentionally kept in each item's front matter: it drives this chronological sort and is retained for logging / code structure. It is just no longer rendered in the UI. {% endcomment %}
   {% assign sorted_portfolio = site.portfolio | sort: 'date' | reverse %}
   {% for post in sorted_portfolio %}
   <table style="width: 100%; border-collapse: collapse; border: none; margin-bottom: 20px;">
