@@ -44,6 +44,8 @@ video).  Used in both list and card layouts.
   {%- if post.paperurl and post.paperurl != '' -%}
     {%- if post.paperurl contains 'arxiv.org' -%}
       <a href="{{ post.paperurl }}" target="_blank" class="ref-tag" title="arXiv"><i class="ai ai-arxiv" aria-hidden="true"></i></a>
+    {%- elsif post.paperurl contains 'engrxiv.org' -%}
+      <a href="{{ post.paperurl }}" target="_blank" class="ref-tag" title="engrXiv (Engineering Archive)"><i class="ai ai-arxiv" aria-hidden="true"></i></a>
     {%- else -%}
       <a href="{{ post.paperurl }}" target="_blank" class="ref-tag" title="Paper"><i class="fas fa-file-pdf"></i></a>
     {%- endif -%}
