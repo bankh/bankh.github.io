@@ -132,7 +132,7 @@ video).  Used in both list and card layouts.
         {% if include.type == "list" %}
           <span style="font-weight: bold; color: #0ea1c5;">{{ include.label }}</span>
           <a href="{{ base_path }}{{ post.url }}" rel="permalink" style="text-decoration: none; color: inherit;">
-            {% if post.type == "In Submission" or post.type == "Submitted/Under Review" or post.type == "Under Review" %}
+            {% if post.type == "In Submission" or post.type == "Submitted/Under Review" or post.type == "Under Review" or post.type == "Non-Peer-Reviewed" %}
               {{ post.citation | remove: '&quot;' | remove: '<i>' | remove: '</i>' | strip }}
             {% elsif post.type contains "Patent" %}
               {% assign office = post.venue | default: post.office | default: venue | default: "U.S. Patent and Trademark Office" %}
@@ -180,7 +180,7 @@ video).  Used in both list and card layouts.
         {% else %}
           <div class="citation-box">
             <p style="margin: 0; color: #333; font-size: 0.9em;">
-              {% if post.type == "In Submission" or post.type == "Submitted/Under Review" or post.type == "Under Review" %}
+              {% if post.type == "In Submission" or post.type == "Submitted/Under Review" or post.type == "Under Review" or post.type == "Non-Peer-Reviewed" %}
                 {{ post.citation | remove: '&quot;' | remove: '<i>' | remove: '</i>' | strip }}
               {% elsif venue == "Patent" or venue == "Provisional Patent" or venue == "patent" or venue == "provisional patent" or post.title contains "Patent" or post.type == "Patent" or post.type == "Patent Application" or post.type == "Provisional Patent" %}
                 {% assign auth = post.inventors | default: post.authors | default: authors %}

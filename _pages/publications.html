@@ -32,7 +32,7 @@ author_profile: true
     {% assign patent_pubs = patent_pubs | push: pub %}
   {% elsif pub.type contains "Conference" %}
     {% assign conference_pubs = conference_pubs | push: pub %}
-  {% elsif pub.type contains "Scientific Magazine" or pub.type contains "Magazine" %}
+  {% elsif pub.type contains "Scientific Magazine" or pub.type contains "Magazine" or pub.type contains "Non-Peer-Reviewed" or pub.type contains "Preprint" %}
     {% assign magazine_pubs = magazine_pubs | push: pub %}
   {% elsif pub.type contains "Submitted" or pub.type contains "Under Review" %}
     {% assign under_review_pubs = under_review_pubs | push: pub %}
@@ -93,9 +93,9 @@ author_profile: true
 <br />
 {% endif %}
 
-<!-- Scientific Magazine Articles Section -->
+<!-- Scientific Articles and Non-Peer-Reviewed Publications Section -->
 {% if magazine_pubs.size > 0 %}
-<h2>Scientific Magazine Articles</h2>
+<h2>Scientific Articles and Non-Peer-Reviewed Publications</h2>
 <hr />
 {% assign mag_count = magazine_pubs.size %}
 {% for post in magazine_pubs %}
