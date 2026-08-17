@@ -8,7 +8,7 @@ video_thumbnail: ""
 slides: ""
 slide_show: false
 slide_thumbnail: ""
-poster: "/images/2026_nsf_fmrg_track21.png"
+poster: "/images/nsf_fmrg_2026.png"
 publication: ""
 github: "https://github.com/abhishekhanchate/nsf-fmrg-data-challenge"
 project_link: "https://sites.google.com/tamu.edu/nsf-future-data-challenge/"
@@ -19,7 +19,7 @@ date: 2026-07-31
 keyword: "Artificial Intelligence, Advanced Manufacturing, Uncertainty Quantification"
 ---
 
-Team **RAMP** (H. Sinan Bank, Colorado State University; N. Bircan Bugdayci, Michigan State University) was selected as one of the **top-five finalists** in the [NSF Future Manufacturing Data Challenge 2026](https://sites.google.com/tamu.edu/nsf-future-data-challenge/) (NSF FMRG-2328395), organized by Texas A&M University. Although technical issues during the live finalist presentation (July 31, 2026) prevented the judges from evaluating it, the full presentation is available on [YouTube](https://www.youtube.com/watch?v=-i8yLJjuH38).
+Team **RAMP** (H. Sinan Bank, Colorado State University; N. Bircan Bugdayci, Michigan State University) was selected as one of the **top-five finalists** in the [NSF Future Manufacturing Data Challenge 2026](https://sites.google.com/tamu.edu/nsf-future-data-challenge/) (NSF FMRG-2328395), organized by Texas A&M University — 107 teams and 200 participants from 48 universities across 27 states. Although technical issues during the live finalist presentation (July 31, 2026) prevented the judges from evaluating it, the full presentation is available on [YouTube](https://www.youtube.com/watch?v=-i8yLJjuH38).
 
 ## The Challenge
 
@@ -40,6 +40,12 @@ The organizers released a [multimodal directed energy deposition (DED) dataset](
 - **Honest calibration under extrapolation.** Conformalized quantile regression with an explicit three-tier coverage-claim hierarchy (guaranteed / diagnostic / indicative), verified by a leave-one-power-out audit.
 
 ## Outcome and Findings
+
+<figure style="text-align: center;">
+  <img src="/images/2026_nsf_fmrg_track21.png" alt="Held-out 200 W track: predicted mean width, 5-95% band, thermal pool extent, and width labels along the track" style="max-width: 100%; height: auto;">
+  <figcaption style="margin-top: 0.5em;"><em>Held-out 200 W track (Track 21): predicted mean width with 5–95% band, the label-free thermal pool extent used as a physical bound, and the measured width labels.</em></figcaption>
+</figure>
+
 
 - Every deep alternative failed its pre-registered promotion gate (the neural process on pretraining-seed stability, the mixture ensemble on downward extrapolation), and substrate SEM contributed nothing across four instrument families — so the shipped model is the physics-anchored Gaussian process (development CRPS 64.7 µm; leave-one-power-out coverage 1.00 at both nominal levels).
 - On the audited held-out 200 W track the model reproduces the along-track fluctuation in amplitude but not in phase, and an exact error decomposition attributes most of the boundary error to *centreline placement* rather than width.
