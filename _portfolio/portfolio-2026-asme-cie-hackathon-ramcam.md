@@ -1,5 +1,5 @@
 ---
-title: "ASME IDETC/CIE 2026 Student Hackathon, Siemens Problem - From CAD to Automated CNC Programming: Five Methods on MachinePlan-10K"
+title: "ASME IDETC/CIE 2026 Hackathon 1st Place - From CAD to Automated CNC Programming: Five Methods on MachinePlan-10K"
 excerpt: "Team RamCAM's entry to the Siemens Foundational Technologies problem: five methods that go from a design B-Rep to a machining program - three developed for this work (MixMash, a diffusion-based method, and CAMCorrector) and two re-implemented from the literature (DeepMS, MP-GFormer) - plus a generator for a new dataset of end-to-end 2.5-axis and 5-axis (2.5+2) CAM programs and two software stacks for inspecting the data and the pipeline"
 advisor: ""
 video: "https://youtu.be/afMHvAYO5ms"
@@ -19,7 +19,7 @@ date: 2026-08-23
 keyword: "Artificial Intelligence, Advanced Manufacturing, CAD/CAM"
 ---
 
-Team **RamCAM** (H. Sinan Bank, Colorado State University) competed in the **Siemens Foundational Technologies** problem of the [ASME-CIE 2026 Student Hackathon](https://event.asme.org/IDETC-CIE), *AI for Integrated Design-to-Manufacturing*, hosted by the Computer and Information in Engineering Division of ASME. The hackathon ran virtually from **August 13-22, 2026**, with the in-person closing event on **August 23, 2026** at the Hilton Houston, alongside **IDETC/CIE 2026 (August 23-26, 2026)**. A three-minute summary of the entry is on [YouTube](https://youtu.be/afMHvAYO5ms).
+Team **RamCAM** (H. Sinan Bank, Colorado State University) won **1st Place** at the [ASME IDETC/CIE 2026 Hackathon](https://event.asme.org/IDETC-CIE), *AI for Integrated Design-to-Manufacturing*, hosted by the Computer and Information in Engineering Division of ASME, with this entry to the **Siemens Foundational Technologies** problem. The hackathon ran virtually from **August 13-22, 2026**, with the in-person closing event on **August 23, 2026** at the Hilton Houston, alongside **IDETC/CIE 2026 (August 23-26, 2026)**. A three-minute summary of the entry is on [YouTube](https://youtu.be/afMHvAYO5ms).
 
 ## The Problem
 
