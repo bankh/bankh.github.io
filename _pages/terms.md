@@ -1,7 +1,7 @@
 ---
 permalink: /terms/
 title: "Terms and Privacy Policy"
-modified: 2016-06-06
+modified: 2026-10-07
 ---
 
 {% include base_path %}
@@ -9,31 +9,40 @@ modified: 2016-06-06
 
 ## Privacy Policy
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+The privacy of my visitors is important. This Privacy Policy outlines the types of information that is received and collected when you visit this site and how it is used.
 
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+I will never share your email address or any other personal information with anyone without your direct consent.
 
-### Log Files
+### Visitor Analytics
 
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
+This site uses third-party analytics services to understand how visitors find and use it. These services collect information such as:
 
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
+* Pages visited, date and time of visit
+* Referring page and browser type
+* Approximate location (country and, where available, city) derived from your IP address
 
-All of this information is not linked to anything that is personally identifiable.
-
-### Cookies and Web Beacons
-
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com) the next time you leave a comment.
-
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
-
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
+This information is used only in aggregate to see which content is useful. It is not sold or shared, and it is not used to identify individual visitors.
 
 #### Google Analytics
 
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+This site uses [Google Analytics 4](https://marketingplatform.google.com/about/analytics/) to report website trends. Google Analytics uses cookies and similar technologies to distinguish visits. You can learn how Google uses information from sites that use its services at [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites). You can opt out with the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout).
+
+#### Cloudflare Web Analytics
+
+This site uses [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/), which measures page views and performance without cookies and without tracking individual visitors. See the [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/).
+
+#### MapMyVisitors
+
+The visitor globe in the sidebar is provided by [MapMyVisitors](https://mapmyvisitors.com/). It records the approximate location of visits to display them on the map. See the [MapMyVisitors Privacy Policy](https://mapmyvisitors.com/b/policy).
+
+### Cookies
+
+Google Analytics stores cookies on your device to distinguish repeat visits. Cloudflare Web Analytics and MapMyVisitors do not set cookies. You can disable or delete cookies through your web browser settings. Instructions can be found on the website of your specific browser.
+
+### Third-Party Links
+
+This site links to external services such as Google Scholar, GitHub, LinkedIn and publisher websites. This Privacy Policy applies only to this site. Please review the privacy policies of those services separately.
+
+### Changes
+
+This policy may be updated from time to time. The date at the top of this page reflects the most recent revision.
