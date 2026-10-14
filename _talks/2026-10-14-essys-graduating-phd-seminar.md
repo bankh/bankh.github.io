@@ -10,8 +10,7 @@ authors: "Bank, H. S."
 referenceurl: ""
 file: "https://drive.google.com/file/d/167xxOaWz12XX42WLLdw4PgMD3lMWR_ey/view?usp=sharing"
 video: "https://youtu.be/HORyUCFvWOA"
+poster: "/images/ESSyS_2026_Graduating_PhD_Seminar.png"
 ---
 
 Invited talk at the ESSyS 2026 Graduating Ph.D. Seminar, presented alongside graduating Ph.D. researchers from the University of Alabama in Huntsville, Northeastern University, Purdue University, and Virginia Tech.
-
-![ESSyS 2026 Graduating Ph.D. Seminar flyer](/images/ESSyS_2026_Graduating_PhD_Seminar.png)

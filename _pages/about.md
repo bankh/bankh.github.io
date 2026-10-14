@@ -15,7 +15,7 @@ redirect_from:
     <a href="#research-areas" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Research Areas</a> |
     <a href="#opportunities" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Opportunities</a> |
     <a href="#student-projects" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Student Projects</a> |
-    <a href="#publications" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Publications and Presentations</a> |
+    <a href="#publications" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Publications</a> |
     <a href="#talks-presentations" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Talks/Presentations/Media</a>
   </nav>
 </div>
@@ -506,7 +506,7 @@ Student Projects <a name="student-projects"></a>
   <a href="#top" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">↑ Go to Top</a>
 </div>
 
-Publications and Presentations (Newest 5)<a name="publications"></a>
+Publications (Newest 5)<a name="publications"></a>
 ------ 
 <!-- <details>
 <summary>Publications </summary> -->
@@ -518,15 +518,7 @@ Publications and Presentations (Newest 5)<a name="publications"></a>
   {% endunless %}
 {% endfor %}
 
-<!-- Presentations: talks excluding media coverage -->
-{% assign presentation_talks = "" | split: "" %}
-{% for talk in site.talks %}
-  {% unless talk.type contains "Media" %}
-    {% assign presentation_talks = presentation_talks | push: talk %}
-  {% endunless %}
-{% endfor %}
-
-<!-- Count totals by type for reverse numbering (same rules as /publications/) -->
+<!-- Count total publications by type for reverse numbering (same rules as /publications/) -->
 {% assign total_journals = 0 %}
 {% assign total_conferences = 0 %}
 {% assign total_patents = 0 %}
@@ -551,22 +543,8 @@ Publications and Presentations (Newest 5)<a name="publications"></a>
 {% assign jour_count = total_journals %}
 {% assign mag_count = total_magazines %}
 {% assign ur_count = total_under_review %}
-{% assign talk_count = presentation_talks.size %}
-{% assign pubs_and_talks = sorted_pubs | concat: presentation_talks | sort: 'date' | reverse %}
-
-<!-- The newest presentation is pinned first; the other 4 slots follow in date order.
-     Labels are assigned over the full date-sorted list so they match /publications/. -->
-{% assign pinned_talk = presentation_talks | sort: 'date' | last %}
-{% assign shown = 0 %}
-{% assign pinned_html = "" %}
-{% assign rest_html = "" %}
-{% for post in pubs_and_talks %}
-  {% capture item_html %}
-  {% if post.collection == 'talks' %}
-    {% assign current_label = '[T' | append: talk_count | append: ']' %}
-    {% assign talk_count = talk_count | minus: 1 %}
-    {% include archive-single-presentation.html post=post label=current_label %}
-  {% elsif post.type contains "Patent" %}
+{% for post in sorted_pubs limit:5 %}
+  {% if post.type contains "Patent" %}
     {% assign current_label = '[P' | append: pat_count | append: ']' %}
     {% assign pat_count = pat_count | minus: 1 %}
     {% include archive-single-publication.html post=post type='list' label=current_label %}
@@ -587,16 +565,7 @@ Publications and Presentations (Newest 5)<a name="publications"></a>
     {% assign jour_count = jour_count | minus: 1 %}
     {% include archive-single-publication.html post=post type='list' label=current_label %}
   {% endif %}
-  {% endcapture %}
-  {% if pinned_talk and post.url == pinned_talk.url %}
-    {% assign pinned_html = item_html %}
-  {% elsif shown < 4 %}
-    {% assign rest_html = rest_html | append: item_html %}
-    {% assign shown = shown | plus: 1 %}
-  {% endif %}
 {% endfor %}
-{{ pinned_html }}
-{{ rest_html }}
 <p><a href="/publications/">Read More...</a></p>
 <!-- </details> -->
 

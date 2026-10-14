@@ -56,6 +56,11 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.poster and page.poster != "" %}
+          <a href="{{ page.poster }}" target="_blank">
+            <img src="{{ page.poster }}" alt="{{ page.title }} Image" style="display: block; max-width: 100%; max-height: 600px; margin: 0 auto 20px; border-radius: 4px;">
+          </a>
+        {% endif %}
         {{ content }}
         {% include talk-resources.html %}
       </section>
