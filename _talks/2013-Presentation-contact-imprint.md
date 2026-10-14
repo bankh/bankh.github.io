@@ -6,6 +6,7 @@ excerpt: 'Intelligent manufacturing system details are given with a novel toolpa
 date: 2013-01-01
 type: 'Conference'
 venue: 'Northeast Complex Fluid anf Soft Matter Workshop'
+authors: 'Bank, H. S., Bajorek, M., & Mazzeo, A. D.'
 paperurl: ''
 citation: 'Bank,HS., Bajorek, M., Mazzeo, DA., (2013). &quot;Contact Imprinting for Disposable Paper-based Flexible Electronics.&quot; <i> Northeast Complex Fluid and Soft Matter Workshop </i>.
 October 2011'

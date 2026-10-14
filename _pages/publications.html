@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications"
+title: "Publications and Presentations"
 permalink: /publications/
 author_profile: true
 ---
@@ -17,6 +17,15 @@ author_profile: true
 {% for pub in all_pubs %}
   {% unless pub.type == 'In Preparation' %}
     {% assign sorted_pubs = sorted_pubs | push: pub %}
+  {% endunless %}
+{% endfor %}
+
+<!-- Presentations: talks excluding media coverage, newest first -->
+{% assign all_talks = site.talks | sort: 'date' | reverse %}
+{% assign presentation_talks = "" | split: "" %}
+{% for talk in all_talks %}
+  {% unless talk.type contains "Media" %}
+    {% assign presentation_talks = presentation_talks | push: talk %}
   {% endunless %}
 {% endfor %}
 
@@ -102,6 +111,19 @@ author_profile: true
   {% assign current_label = '[M' | append: mag_count | append: ']' %}
   {% assign mag_count = mag_count | minus: 1 %}
   {% include archive-single-publication.html post=post type='list' label=current_label %}
+{% endfor %}
+<br />
+{% endif %}
+
+<!-- Presentations and Invited Talks Section -->
+{% if presentation_talks.size > 0 %}
+<h2>Presentations and Invited Talks</h2>
+<hr />
+{% assign talk_count = presentation_talks.size %}
+{% for post in presentation_talks %}
+  {% assign current_label = '[T' | append: talk_count | append: ']' %}
+  {% assign talk_count = talk_count | minus: 1 %}
+  {% include archive-single-presentation.html post=post label=current_label %}
 {% endfor %}
 {% endif %}
 

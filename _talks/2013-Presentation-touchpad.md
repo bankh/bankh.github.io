@@ -6,6 +6,7 @@ permalink: /talks/2013-touchpad-presentation
 venue: "ASME International Mechanical Engineering Congress and Exposition (IMECE)"
 date: 2013-10-15
 location: "San Diego, CA, USA"
+authors: "Bank, H. S., Yigit, I. E., Bicer, M., & Mazzeo, A. D."
 reference url: ""
 file: ""
 ---
