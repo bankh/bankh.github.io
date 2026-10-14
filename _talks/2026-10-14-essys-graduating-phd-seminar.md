@@ -1,5 +1,5 @@
 ---
-title: "Generative Engineering and Design of Cyber-Physical Systems"
+title: "Generative Design and Engineering of Cyber-Physical Systems"
 collection: talks
 type: "Invited talk"
 permalink: /talks/2026-essys-graduating-phd-seminar
