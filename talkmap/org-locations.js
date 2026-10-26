@@ -18,5 +18,10 @@ var addressPoints = [
     "The Use of Mixed Reality for Manufacturing<br />National Institute of Standards and Technology - NIST; Gaithersburg, MD",
     39.1399187,
     -77.1929215
+  ],
+  [
+    "OpenJ: A Conceptual Framework for Open-Source Digital Human Modeling and Ergonomic Assessment in a CAD Environment<br />ASME International Mechanical Engineering Congress and Exposition (IMECE 2026); Vancouver, BC, Canada",
+    49.2608724,
+    -123.113952
   ]
 ];
