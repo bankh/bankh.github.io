@@ -11,12 +11,12 @@ redirect_from:
 <!-- Navigation Menu -->
 <div style="text-align: center; margin-bottom: 30px; padding: 15px 0; border-bottom: 1px solid var(--global-border-color);">
   <nav>
+    <a href="#publications" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Publications</a> |
+    <a href="#talks-presentations" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Talks/Presentations/Media</a> |
     <a href="#vision-approach" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Vision & Approach</a> |
     <a href="#research-areas" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Research Areas</a> |
     <a href="#opportunities" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Opportunities</a> |
-    <a href="#student-projects" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Student Projects</a> |
-    <a href="#publications" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Publications</a> |
-    <a href="#talks-presentations" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Talks/Presentations/Media</a>
+    <a href="#student-projects" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">Student Projects</a>
   </nav>
 </div>
 
@@ -25,6 +25,95 @@ About me
 Researcher, builder, founder. I work on AI, robotics, and advanced manufacturing — and the digital thread between them.
 
 My research approach centers on building a unified, generative, and malleable digital thread through data (e.g., [CatalogBank](https://github.com/bankh/catalogbank)), investigation of fundamental aspects (e.g., workflows, architectures, and algorithms), and their utilization as software (e.g., [DocumentLabeler](https://github.com/bankh/DocumentLabeler), GenAI Workbench, etc.) or hardware (e.g., [GPU Workstations](https://github.com/bankh/GPU_Compute), etc.) stacks to bridge academia and industry.
+
+Publications (Newest 5)<a name="publications"></a>
+------ 
+<!-- <details>
+<summary>Publications </summary> -->
+{% assign all_pubs = site.publications | sort: 'date' | reverse %}
+{% assign sorted_pubs = "" | split: "" %}
+{% for pub in all_pubs %}
+  {% unless pub.type == 'In Preparation' %}
+    {% assign sorted_pubs = sorted_pubs | push: pub %}
+  {% endunless %}
+{% endfor %}
+
+<!-- Count total publications by type for reverse numbering (same rules as /publications/) -->
+{% assign total_journals = 0 %}
+{% assign total_conferences = 0 %}
+{% assign total_patents = 0 %}
+{% assign total_magazines = 0 %}
+{% assign total_under_review = 0 %}
+{% for pub in sorted_pubs %}
+  {% if pub.type contains "Patent" %}
+    {% assign total_patents = total_patents | plus: 1 %}
+  {% elsif pub.type contains "Conference" %}
+    {% assign total_conferences = total_conferences | plus: 1 %}
+  {% elsif pub.type contains "Scientific Magazine" or pub.type contains "Magazine" or pub.type contains "Non-Peer-Reviewed" or pub.type contains "Preprint" %}
+    {% assign total_magazines = total_magazines | plus: 1 %}
+  {% elsif pub.type contains "Submitted" or pub.type contains "Under Review" %}
+    {% assign total_under_review = total_under_review | plus: 1 %}
+  {% else %}
+    {% assign total_journals = total_journals | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% assign conf_count = total_conferences %}
+{% assign pat_count = total_patents %}
+{% assign jour_count = total_journals %}
+{% assign mag_count = total_magazines %}
+{% assign ur_count = total_under_review %}
+{% for post in sorted_pubs limit:5 %}
+  {% if post.type contains "Patent" %}
+    {% assign current_label = '[P' | append: pat_count | append: ']' %}
+    {% assign pat_count = pat_count | minus: 1 %}
+    {% include archive-single-publication.html post=post type='list' label=current_label %}
+  {% elsif post.type contains "Conference" %}
+    {% assign current_label = '[C' | append: conf_count | append: ']' %}
+    {% assign conf_count = conf_count | minus: 1 %}
+    {% include archive-single-publication.html post=post type='list' label=current_label %}
+  {% elsif post.type contains "Scientific Magazine" or post.type contains "Magazine" or post.type contains "Non-Peer-Reviewed" or post.type contains "Preprint" %}
+    {% assign current_label = '[M' | append: mag_count | append: ']' %}
+    {% assign mag_count = mag_count | minus: 1 %}
+    {% include archive-single-publication.html post=post type='list' label=current_label %}
+  {% elsif post.type contains "Submitted" or post.type contains "Under Review" %}
+    {% assign current_label = '[U' | append: ur_count | append: ']' %}
+    {% assign ur_count = ur_count | minus: 1 %}
+    {% include archive-single-publication.html post=post type='list' label=current_label %}
+  {% else %}
+    {% assign current_label = '[J' | append: jour_count | append: ']' %}
+    {% assign jour_count = jour_count | minus: 1 %}
+    {% include archive-single-publication.html post=post type='list' label=current_label %}
+  {% endif %}
+{% endfor %}
+<p><a href="/publications/">Read More...</a></p>
+<!-- </details> -->
+
+<div style="text-align: center; margin-top: 20px;">
+  <a href="#top" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">↑ Go to Top</a>
+</div>
+
+Talks/ Presentations/ Media (Newest 5)<a name="talks-presentations"></a>
+------
+<!-- <details> -->
+<!-- <summary>Talks/ Presentations (Newest 5)</summary> -->
+
+<ol style="list-style-type: decimal; list-style-position: outside; padding-left: 1.5em; margin-left: 0; direction: ltr; text-align: left;">
+{% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+{% for post in sorted_talks limit:5 %}
+    <li style="margin-bottom: 15px;">
+    {% include archive-single-talk-cv.html %}
+    </li>
+{% endfor %}
+</ol>
+<a href="/talks/">Read More...</a>
+
+<!-- </details> -->
+
+<div style="text-align: center; margin-top: 20px;">
+  <a href="#top" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">↑ Go to Top</a>
+</div>
+
 
 <figure style="text-align: center;">
   <img src="/images/former_research.png" alt="Former Research Projects and Future Research Thrusts" style="display: block; margin-left: auto; margin-right: auto;">
@@ -501,94 +590,6 @@ Student Projects <a name="student-projects"></a>
   <p><a href="/teaching/">View Other Student Projects ...</a></p>
 </details>
 <br>
-
-<div style="text-align: center; margin-top: 20px;">
-  <a href="#top" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">↑ Go to Top</a>
-</div>
-
-Publications (Newest 5)<a name="publications"></a>
------- 
-<!-- <details>
-<summary>Publications </summary> -->
-{% assign all_pubs = site.publications | sort: 'date' | reverse %}
-{% assign sorted_pubs = "" | split: "" %}
-{% for pub in all_pubs %}
-  {% unless pub.type == 'In Preparation' %}
-    {% assign sorted_pubs = sorted_pubs | push: pub %}
-  {% endunless %}
-{% endfor %}
-
-<!-- Count total publications by type for reverse numbering (same rules as /publications/) -->
-{% assign total_journals = 0 %}
-{% assign total_conferences = 0 %}
-{% assign total_patents = 0 %}
-{% assign total_magazines = 0 %}
-{% assign total_under_review = 0 %}
-{% for pub in sorted_pubs %}
-  {% if pub.type contains "Patent" %}
-    {% assign total_patents = total_patents | plus: 1 %}
-  {% elsif pub.type contains "Conference" %}
-    {% assign total_conferences = total_conferences | plus: 1 %}
-  {% elsif pub.type contains "Scientific Magazine" or pub.type contains "Magazine" or pub.type contains "Non-Peer-Reviewed" or pub.type contains "Preprint" %}
-    {% assign total_magazines = total_magazines | plus: 1 %}
-  {% elsif pub.type contains "Submitted" or pub.type contains "Under Review" %}
-    {% assign total_under_review = total_under_review | plus: 1 %}
-  {% else %}
-    {% assign total_journals = total_journals | plus: 1 %}
-  {% endif %}
-{% endfor %}
-
-{% assign conf_count = total_conferences %}
-{% assign pat_count = total_patents %}
-{% assign jour_count = total_journals %}
-{% assign mag_count = total_magazines %}
-{% assign ur_count = total_under_review %}
-{% for post in sorted_pubs limit:5 %}
-  {% if post.type contains "Patent" %}
-    {% assign current_label = '[P' | append: pat_count | append: ']' %}
-    {% assign pat_count = pat_count | minus: 1 %}
-    {% include archive-single-publication.html post=post type='list' label=current_label %}
-  {% elsif post.type contains "Conference" %}
-    {% assign current_label = '[C' | append: conf_count | append: ']' %}
-    {% assign conf_count = conf_count | minus: 1 %}
-    {% include archive-single-publication.html post=post type='list' label=current_label %}
-  {% elsif post.type contains "Scientific Magazine" or post.type contains "Magazine" or post.type contains "Non-Peer-Reviewed" or post.type contains "Preprint" %}
-    {% assign current_label = '[M' | append: mag_count | append: ']' %}
-    {% assign mag_count = mag_count | minus: 1 %}
-    {% include archive-single-publication.html post=post type='list' label=current_label %}
-  {% elsif post.type contains "Submitted" or post.type contains "Under Review" %}
-    {% assign current_label = '[U' | append: ur_count | append: ']' %}
-    {% assign ur_count = ur_count | minus: 1 %}
-    {% include archive-single-publication.html post=post type='list' label=current_label %}
-  {% else %}
-    {% assign current_label = '[J' | append: jour_count | append: ']' %}
-    {% assign jour_count = jour_count | minus: 1 %}
-    {% include archive-single-publication.html post=post type='list' label=current_label %}
-  {% endif %}
-{% endfor %}
-<p><a href="/publications/">Read More...</a></p>
-<!-- </details> -->
-
-<div style="text-align: center; margin-top: 20px;">
-  <a href="#top" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">↑ Go to Top</a>
-</div>
-
-Talks/ Presentations/ Media (Newest 5)<a name="talks-presentations"></a>
-------
-<!-- <details> -->
-<!-- <summary>Talks/ Presentations (Newest 5)</summary> -->
-
-<ol style="list-style-type: decimal; list-style-position: outside; padding-left: 1.5em; margin-left: 0; direction: ltr; text-align: left;">
-{% assign sorted_talks = site.talks | sort: 'date' | reverse %}
-{% for post in sorted_talks limit:5 %}
-    <li style="margin-bottom: 15px;">
-    {% include archive-single-talk-cv.html %}
-    </li>
-{% endfor %}
-</ol>
-<a href="/talks/">Read More...</a>
-
-<!-- </details> -->
 
 <div style="text-align: center; margin-top: 20px;">
   <a href="#top" style="color: var(--global-text-color); text-decoration: none; font-weight: bold; font-family: var(--global-font-family);">↑ Go to Top</a>

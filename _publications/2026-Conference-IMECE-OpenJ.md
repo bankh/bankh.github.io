@@ -9,6 +9,7 @@ venue: 'ASME IMECE 2026'
 month: 'November'
 location: 'Vancouver, BC, Canada'
 paperurl: 'https://arxiv.org/abs/2605.04270'
+video: 'https://www.youtube.com/watch?v=iIZhCLujRBs'
 authors: 'Bank, H.S., & Eaton, C.E'
 citation: '@inproceedings{bank2026openj,
   author={Bank, Hasan Sinan and Eaton, Casey E},
